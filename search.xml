@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Mysql安装</title>
+      <link href="/2023/02/28/Mysql%E5%AE%89%E8%A3%85/"/>
+      <url>/2023/02/28/Mysql%E5%AE%89%E8%A3%85/</url>
+      
+        <content type="html"><![CDATA[<p>以Ubuntu为例</p><h2 id="安装mysql-server"><a href="#安装mysql-server" class="headerlink" title="安装mysql-server"></a>安装mysql-server</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt update </span><br><span class="line">sudo apt upgrade // 更新</span><br><span class="line">sudo apt install mysql-server</span><br></pre></td></tr></table></figure><h2 id="进行安装的初始化"><a href="#进行安装的初始化" class="headerlink" title="进行安装的初始化"></a>进行安装的初始化</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mysql_secure_installation </span><br></pre></td></tr></table></figure><p>按照提示选择即可</p><h2 id="验证是否安装成功"><a href="#验证是否安装成功" class="headerlink" title="验证是否安装成功"></a>验证是否安装成功</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mysql --version // 查看版本</span><br><span class="line">sudo mysql -u root -p</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>爬虫环境配置</title>
+      <link href="/2023/02/28/%E7%88%AC%E8%99%AB/"/>
+      <url>/2023/02/28/%E7%88%AC%E8%99%AB/</url>
+      
+        <content type="html"><![CDATA[<h2 id="虚拟环境配置"><a href="#虚拟环境配置" class="headerlink" title="虚拟环境配置"></a>虚拟环境配置</h2><p>虚拟环境可以使项目所使用的库与默认的base进行隔离，更方便管理。</p><h3 id="pip换源"><a href="#pip换源" class="headerlink" title="pip换源"></a>pip换源</h3><p>通过换源可以使pip安装库更加快速</p><p>在C:\Users\你的用户名\ 目录下创建pip文件夹</p><p>其目录大概这个样子</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\Qlittle\pip</span><br></pre></td></tr></table></figure><p>进入pip文件夹，创建一个名为 <strong>pip.ini</strong> 的文件<br>用VS Code或者记事本打开进行编辑，注意修改下cache-dir，这里是下载缓存，你自己改成你自己想放在的地方，挺大的不建议放在C盘。</p><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[global]</span></span><br><span class="line"><span class="attr">timeout</span> = <span class="number">6000</span></span><br><span class="line"><span class="attr">index-url</span> = https://mirrors.bfsu.edu.cn/pypi/web/simple</span><br><span class="line"><span class="attr">cache-dir</span> = D:\\Cache\\pip</span><br></pre></td></tr></table></figure><h3 id="检查python库"><a href="#检查python库" class="headerlink" title="检查python库"></a>检查python库</h3><p>打开终端，这里使用的是PowerShell</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip list</span><br></pre></td></tr></table></figure><p>检查是否有<strong>virtualenv</strong><br>若没有则进行安装</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install virtualenv</span><br></pre></td></tr></table></figure><h3 id="创建虚拟环境"><a href="#创建虚拟环境" class="headerlink" title="创建虚拟环境"></a>创建虚拟环境</h3><blockquote><p>shell命令前为当前目录。即一下格式为：当前目录&gt; shell命令</p></blockquote><ol><li><p>创建项目文件夹</p><p> 在D盘的Code的目录下创建了一个名为<strong>ReqLearn</strong>的文件夹，并进入</p> <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">D:\Code&gt; mkdir ReqLearn </span><br><span class="line">D:\Code&gt; cd .\ReqLearn\</span><br></pre></td></tr></table></figure></li><li><p>创建虚拟环境</p><p> 创建虚拟环境并检查是否成功。</p> <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">D:\Code\ReqLearn&gt; virtualenv venv   # 这里的venv可以是任意名</span><br><span class="line">D:\Code\ReqLearn&gt; ls</span><br></pre></td></tr></table></figure><p> 成功则在当前目录下创建一个venv的文件夹</p></li><li><p>激活虚拟环境</p> <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">D:\Code\ReqLearn&gt; cd .\venv\Scripts\</span><br><span class="line">D:\Code\ReqLearn\venv\Scripts&gt; .\activate</span><br></pre></td></tr></table></figure><p> 这时你会发现命令行最前端会多出一个 <strong>(venv)</strong> 类似</p> <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(venv) PS D:\Code\ReqLearn\venv\Scripts&gt;</span><br></pre></td></tr></table></figure><p> 再次检查python库列表</p> <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip list</span><br></pre></td></tr></table></figure><p> 你会发现只有基础库，这便说明你是在虚拟环境的容器里。</p></li><li><p>安装爬虫常用库</p><p> 还有一些什么 beautifulsoup scrapy，这里只安装了requests（请求库）与pymysql（数据库支持）</p> <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install requests pymysql</span><br></pre></td></tr></table></figure><p> 这时在运行 <strong>pip list</strong> 便可以看到有requests的标识</p></li><li><p>使用VS Code打开项目</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">D:\Code&gt; code .\ReqLearn\</span><br></pre></td></tr></table></figure><p>这时候VS Code就起来了</p></li></ol><h2 id="VS-Code-插件设置"><a href="#VS-Code-插件设置" class="headerlink" title="VS Code 插件设置"></a>VS Code 插件设置</h2><p>安装“Chinese ……”这个官方汉化插件与“python”的官方python支持插件就行。</p><h2 id="一个简单的爬虫"><a href="#一个简单的爬虫" class="headerlink" title="一个简单的爬虫"></a>一个简单的爬虫</h2><h3 id="准备阶段"><a href="#准备阶段" class="headerlink" title="准备阶段"></a>准备阶段</h3><p>新建一个文件demo.py，这时候右下角可能提示你是否安装一个库，先不要管，但不要关掉。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br></pre></td></tr></table></figure><p>点击运行（左上角的三角），看看下方终端是否报错，同时应该注意运行时是否自动进入了虚拟环境，也就是命令好前是否有(venv)。<br>以上都无误后，安装上面vscode提到的那个库，点击后其实就是运行了这条命令，安装了一个辅助检测Python代码是否规范的工具。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">d:/Code/ReqLearn/venv/Scripts/python.exe -m pip install -U flake8</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2023/02/28/hello-world/"/>
+      <url>/2023/02/28/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/custom.css"/>
+      <url>/css/custom.css</url>
+      
+        <content type="html"><![CDATA[/* 页脚与头图透明 */#footer {    background: transparent !important;  }  #page-header {    background: transparent !important;  }    /* 白天模式遮罩透明 */  #footer::before {    background: transparent !important;  }  #page-header::before {    background: transparent !important;  }    /* 夜间模式遮罩透明 */  [data-theme="dark"] #footer::before {    background: transparent !important;  }  [data-theme="dark"] #page-header::before {    background: transparent !important;  }]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>动画</title>
+      <link href="/cartoon/index.html"/>
+      <url>/cartoon/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>友情链接</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>音乐</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>壁纸</title>
+      <link href="/wallpaper/index.html"/>
+      <url>/wallpaper/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+  
+</search>
