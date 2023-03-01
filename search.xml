@@ -4,46 +4,82 @@
   
     
     <entry>
-      <title>自定义数据类型</title>
+      <title>C++ | 自定义数据类型</title>
       <link href="/2023/03/01/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
       <url>/2023/03/01/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</url>
       
         <content type="html"><![CDATA[]]></content>
       
       
+      <categories>
+          
+          <category> 编程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> C++ </tag>
+            
+        </tags>
       
     </entry>
     
     
     
     <entry>
-      <title>引用</title>
+      <title>C++ | 引用</title>
       <link href="/2023/03/01/%E5%BC%95%E7%94%A8/"/>
       <url>/2023/03/01/%E5%BC%95%E7%94%A8/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h2 id="什么是引用"><a href="#什么是引用" class="headerlink" title="什么是引用"></a>什么是引用</h2><p>引用为对象起了另外一个名字，引用类型引用另外一种类型。</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> ival = <span class="number">1024</span>;</span><br><span class="line"><span class="type">int</span> &amp;refVal = ival;</span><br></pre></td></tr></table></figure><blockquote><p>引用并非对象，相反的，它只是为一个已经存在的对象所起的另外一个名字。</p></blockquote>]]></content>
       
       
+      <categories>
+          
+          <category> 编程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> C++ </tag>
+            
+        </tags>
       
     </entry>
     
     
     
     <entry>
-      <title>数组</title>
+      <title>C++ | 数组</title>
       <link href="/2023/03/01/%E6%95%B0%E7%BB%84/"/>
       <url>/2023/03/01/%E6%95%B0%E7%BB%84/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p>数组的大小确定不变，不能随意向数组中添加元素。</p><blockquote><p>如果不清楚元素的确切个数，使用vector</p></blockquote><h2 id="定义和初始化"><a href="#定义和初始化" class="headerlink" title="定义和初始化"></a>定义和初始化</h2><p>数组的声明形如 a[d]，其中a是数组的名字，d是数组的维度，其中数组的维度d<strong>必须</strong>是<strong>常量表达式</strong>。</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">unsigned</span> cnt = <span class="number">42</span>;              <span class="comment">// 不是常量表达式</span></span><br><span class="line"><span class="keyword">constexpr</span> <span class="type">unsigned</span> sz = <span class="number">42</span>;     <span class="comment">// 常量表达式，关于constexpr</span></span><br><span class="line"><span class="type">int</span> arr[<span class="number">10</span>];                    <span class="comment">// 含有10个整数的数组</span></span><br><span class="line"><span class="type">int</span> *parr[sz];                  <span class="comment">// 含有42个整型指针的数组</span></span><br><span class="line">string bad[cnt];                <span class="comment">// 错误：cnt不是常量表达式</span></span><br><span class="line">string strs[<span class="built_in">get_size</span>()];        <span class="comment">// 当get_size是constexpr时正确；否则错误</span></span><br></pre></td></tr></table></figure><h2 id="不允许拷贝和赋值"><a href="#不允许拷贝和赋值" class="headerlink" title="不允许拷贝和赋值"></a>不允许拷贝和赋值</h2><p>不能将数组的内容拷贝给其他数组作为其初始值，也不能用数组为其他数组赋值</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> a[] = &#123;<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>&#125;;    </span><br><span class="line"><span class="type">int</span> a2[] = a;           <span class="comment">// 错误</span></span><br><span class="line">a2 = a;                 <span class="comment">// 错误</span></span><br></pre></td></tr></table></figure><blockquote><p>一些编译器支持数组的赋值，这就是所谓的编译器拓展。</p></blockquote><h2 id="复杂数组的声明"><a href="#复杂数组的声明" class="headerlink" title="复杂数组的声明"></a>复杂数组的声明</h2><p>要理解数组声明的含义，最好的办法是<strong>从数组的名字开始按照由内向外的顺序阅读</strong></p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> *ptrs[<span class="number">10</span>];              <span class="comment">// ptrs是含有10个整型指针的数组</span></span><br><span class="line"><span class="type">int</span> &amp;refs[<span class="number">10</span>] = <span class="comment">/* ? */</span>;    <span class="comment">// 错误，不存在引用的数组</span></span><br><span class="line"><span class="built_in">int</span> (*Parray)[<span class="number">10</span>] = &amp;arr;   <span class="comment">// Parray指向一个含有10个整数的数组</span></span><br><span class="line"><span class="built_in">int</span> (&amp;arrRef)[<span class="number">10</span>] = arr;    <span class="comment">// arrRef引用一个含有10个整数的数组</span></span><br></pre></td></tr></table></figure><h2 id="访问数组元素"><a href="#访问数组元素" class="headerlink" title="访问数组元素"></a>访问数组元素</h2><p>与标准库类型vector与string一样。</p><h2 id="指针与数组"><a href="#指针与数组" class="headerlink" title="指针与数组"></a>指针与数组</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">string nums[] = &#123;<span class="string">&quot;one&quot;</span>, <span class="string">&quot;two&quot;</span>, <span class="string">&quot;three&quot;</span>&#125;;</span><br><span class="line">string *p = &amp;nums[<span class="number">0</span>];    <span class="comment">// p指向num的第一个元素</span></span><br><span class="line">string *p2 = nums;       <span class="comment">// 如上</span></span><br></pre></td></tr></table></figure><h2 id="标准库函数begin和end"><a href="#标准库函数begin和end" class="headerlink" title="标准库函数begin和end"></a>标准库函数begin和end</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> ia[] = &#123;<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>&#125;;</span><br><span class="line"><span class="type">int</span> *beg = <span class="built_in">begin</span>(ia);   <span class="comment">// 指向ia首元素的指针</span></span><br><span class="line"><span class="type">int</span> *last = <span class="built_in">end</span>(ia);    <span class="comment">// 指向ia尾元素的下一个位置的指针</span></span><br></pre></td></tr></table></figure><h2 id="解引用和指针运算的交互"><a href="#解引用和指针运算的交互" class="headerlink" title="解引用和指针运算的交互"></a>解引用和指针运算的交互</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> ia[] = &#123;<span class="number">0</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">6</span>, <span class="number">8</span>&#125;;</span><br><span class="line"><span class="type">int</span> last = *(ia + <span class="number">4</span>);       <span class="comment">// 把last初始化成8，也就是ia[4]的值；</span></span><br><span class="line">last = *ia + <span class="number">4</span>;             <span class="comment">// 等价于last = ia[0] + 4;</span></span><br></pre></td></tr></table></figure><h2 id="使用数组初始化vector对象"><a href="#使用数组初始化vector对象" class="headerlink" title="使用数组初始化vector对象"></a>使用数组初始化vector对象</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> int_arr[] = &#123;<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>&#125;;</span><br><span class="line"><span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">ivec</span><span class="params">(begin(int_arr), end(int_arr))</span></span>;</span><br></pre></td></tr></table></figure>]]></content>
       
       
+      <categories>
+          
+          <category> 编程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> C++ </tag>
+            
+        </tags>
       
     </entry>
     
     
     
     <entry>
-      <title>声明与定义</title>
+      <title>C++ | 声明与定义</title>
       <link href="/2023/03/01/%E5%A3%B0%E6%98%8E%E4%B8%8E%E5%AE%9A%E4%B9%89/"/>
       <url>/2023/03/01/%E5%A3%B0%E6%98%8E%E4%B8%8E%E5%AE%9A%E4%B9%89/</url>
       
@@ -68,7 +104,7 @@
     
     
     <entry>
-      <title>迭代器</title>
+      <title>C++ | 迭代器</title>
       <link href="/2023/03/01/%E8%BF%AD%E4%BB%A3%E5%99%A8/"/>
       <url>/2023/03/01/%E8%BF%AD%E4%BB%A3%E5%99%A8/</url>
       
@@ -93,7 +129,7 @@
     
     
     <entry>
-      <title>处理类型</title>
+      <title>C++ | 处理类型</title>
       <link href="/2023/03/01/%E5%A4%84%E7%90%86%E7%B1%BB%E5%9E%8B/"/>
       <url>/2023/03/01/%E5%A4%84%E7%90%86%E7%B1%BB%E5%9E%8B/</url>
       
@@ -118,7 +154,7 @@
     
     
     <entry>
-      <title>初始化</title>
+      <title>C++ | 初始化</title>
       <link href="/2023/03/01/%E5%88%9D%E5%A7%8B%E5%8C%96/"/>
       <url>/2023/03/01/%E5%88%9D%E5%A7%8B%E5%8C%96/</url>
       
@@ -143,7 +179,7 @@
     
     
     <entry>
-      <title>常量表达式</title>
+      <title>C++ | 常量表达式</title>
       <link href="/2023/03/01/%E5%B8%B8%E9%87%8F%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
       <url>/2023/03/01/%E5%B8%B8%E9%87%8F%E8%A1%A8%E8%BE%BE%E5%BC%8F/</url>
       
@@ -168,7 +204,7 @@
     
     
     <entry>
-      <title>表达式基础</title>
+      <title>C++ | 表达式基础</title>
       <link href="/2023/03/01/%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%9F%BA%E7%A1%80/"/>
       <url>/2023/03/01/%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%9F%BA%E7%A1%80/</url>
       
@@ -193,20 +229,32 @@
     
     
     <entry>
-      <title>vector类型</title>
+      <title>C++ | vector类型</title>
       <link href="/2023/03/01/vector%E7%B1%BB%E5%9E%8B/"/>
       <url>/2023/03/01/vector%E7%B1%BB%E5%9E%8B/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p>标准库类型vector表示对象的集合，其中所有对象的类型都相同。</p><h2 id="引入"><a href="#引入" class="headerlink" title="引入"></a>引入</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> namespcae std;</span><br></pre></td></tr></table></figure><blockquote><p>vector 是模板而非类型，由vector生成的类型必须包含vector中元素的类型</p></blockquote><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vector&lt;<span class="type">int</span>&gt; ivec;               <span class="comment">// ivec保存int类型的对象</span></span><br><span class="line">vector&lt;Sales_item&gt; Sales_vec;   <span class="comment">// 保存Sales_item类型的对象</span></span><br></pre></td></tr></table></figure><blockquote><p>某些编译器可能需要vector&lt;vector&lt;int&gt; &gt;来定义vector的元素还是vector的场景。</p></blockquote><h2 id="定义和初始化vector对象"><a href="#定义和初始化vector对象" class="headerlink" title="定义和初始化vector对象"></a>定义和初始化vector对象</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">vector&lt;T&gt; v1;</span><br><span class="line"><span class="function">vector&lt;T&gt; <span class="title">v2</span><span class="params">(v1)</span></span>;</span><br><span class="line">vector&lt;T&gt; v2 = v1;</span><br><span class="line"><span class="function">vector&lt;T&gt; <span class="title">v3</span><span class="params">(n, val)</span></span>;</span><br><span class="line"><span class="function">vector&lt;T&gt; <span class="title">v4</span><span class="params">(n)</span></span>;</span><br><span class="line">vector&lt;T&gt; v5&#123;a, b, c...&#125;;</span><br><span class="line">vector&lt;T&gt; v5 = &#123;a, b, c...&#125;</span><br></pre></td></tr></table></figure><p>C++新标准：列表初始化</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vector&lt;string&gt; articles = &#123;<span class="string">&quot;a&quot;</span>, <span class="string">&quot;an&quot;</span>, <span class="string">&quot;the&quot;</span>&#125;;</span><br></pre></td></tr></table></figure><h3 id="列表初始值还是元素数量"><a href="#列表初始值还是元素数量" class="headerlink" title="列表初始值还是元素数量"></a>列表初始值还是元素数量</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">v1</span><span class="params">(<span class="number">10</span>)</span></span>;     <span class="comment">// v1有10个元素，每个元素都是0</span></span><br><span class="line">vector&lt;<span class="type">int</span>&gt; v2&#123;<span class="number">10</span>&#125;;     <span class="comment">// v2有1个元素，该元素都是10</span></span><br><span class="line"></span><br><span class="line"><span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">v3</span><span class="params">(<span class="number">10</span>, <span class="number">1</span>)</span></span>;  <span class="comment">// v3有10个元素，每个值都是1</span></span><br><span class="line">vector&lt;<span class="type">int</span>&gt; v4&#123;<span class="number">10</span>, <span class="number">1</span>&#125;;  <span class="comment">// v4有2个元素，值分别是10和1</span></span><br></pre></td></tr></table></figure><h2 id="向vector对象中添加元素"><a href="#向vector对象中添加元素" class="headerlink" title="向vector对象中添加元素"></a>向vector对象中添加元素</h2><p>创建一个数组包含的元素是从0到99。</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">vector&lt;<span class="type">int</span>&gt; v2;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i != <span class="number">100</span>; ++i)</span><br><span class="line">    v2.<span class="built_in">push_back</span>(i)</span><br></pre></td></tr></table></figure><h2 id="其他vector操作"><a href="#其他vector操作" class="headerlink" title="其他vector操作"></a>其他vector操作</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">v.<span class="built_in">empty</span>()           <span class="comment">// 如果v不含有任何元素，返回真:否则返回假</span></span><br><span class="line">v.<span class="built_in">size</span>()            <span class="comment">// 返回v中元素的个数</span></span><br><span class="line">v.<span class="built_in">push_back</span>(t)      <span class="comment">// 向v的尾端添加一个值为t的元素</span></span><br><span class="line">v[n]                <span class="comment">// 返回v中第n个位置上元素的引用</span></span><br><span class="line">v1 = v2             <span class="comment">// 用v2中元素的拷贝替换v1中的元素</span></span><br><span class="line">vl = &#123;a,b,c... &#125;    <span class="comment">// 用列表中元素的拷贝替换v1中的元素</span></span><br><span class="line">v1 == v2            <span class="comment">// v1和v2相等当且仅当它们的元素数量相同且对应位置的元素值都相同</span></span><br><span class="line">v1 != v2</span><br><span class="line">&lt;，&lt;=, &gt;，&gt;=        <span class="comment">// 顾名思义，以字典顺序进行比较</span></span><br></pre></td></tr></table></figure><p>将列表中元素进行平方</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">vector&lt;<span class="type">int</span>&gt; v&#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>&#125;;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">auto</span> &amp;i : v)</span><br><span class="line">    i *= i;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">auto</span> i : v)</span><br><span class="line">    cout &lt;&lt; i &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">cout &lt;&lt; endl;</span><br></pre></td></tr></table></figure><blockquote><p>要使用size_type，需首先指定他是由哪种类型定义的。vector对象的类型总是包含着元素的类型</p></blockquote><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vector&lt;<span class="type">int</span>&gt;::size_type  <span class="comment">// 正确</span></span><br><span class="line">vector::size_type       <span class="comment">// 错误</span></span><br></pre></td></tr></table></figure><p>vector对象（以及string）的下注运算符可用于访问已存在的元素，而不能用于添加元素。</p>]]></content>
       
       
+      <categories>
+          
+          <category> 编程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> C++ </tag>
+            
+        </tags>
       
     </entry>
     
     
     
     <entry>
-      <title>string类型</title>
+      <title>C++ | string类型</title>
       <link href="/2023/03/01/string%E7%B1%BB%E5%9E%8B/"/>
       <url>/2023/03/01/string%E7%B1%BB%E5%9E%8B/</url>
       
@@ -231,7 +279,7 @@
     
     
     <entry>
-      <title>const限定符</title>
+      <title>C++ | const限定符</title>
       <link href="/2023/03/01/const%E9%99%90%E5%AE%9A%E7%AC%A6/"/>
       <url>/2023/03/01/const%E9%99%90%E5%AE%9A%E7%AC%A6/</url>
       
@@ -360,6 +408,17 @@
     
     
     <entry>
+      <title></title>
+      <link href="/css/readPercent.css"/>
+      <url>/css/readPercent.css</url>
+      
+        <content type="html"><![CDATA[/* 返回顶部 */button#go-up #percent {    display: none;    font-weight: bold;    font-size: 15px !important;}button#go-up span {    font-size: 12px!important;    margin-right: -1px;}/* 鼠标滑动到按钮上时显示返回顶部图标 */button#go-up:hover i {    display: block !important;}button#go-up:hover #percent {    display: none !important;}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
@@ -394,10 +453,10 @@
     
     <entry>
       <title></title>
-      <link href="/css/readPercent.css"/>
-      <url>/css/readPercent.css</url>
+      <link href="/js/title.js"/>
+      <url>/js/title.js</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[//动态标题var OriginTitile = document.title;var titleTime;document.addEventListener('visibilitychange', function () {  if (document.hidden) {    //离开当前页面时标签显示内容    document.title = '👀 Where you are? ~';    clearTimeout(titleTime);  } else {    //返回当前页面时标签显示内容    document.title = '🐖 I find you!';    //两秒后变回正常标题    titleTime = setTimeout(function () {      document.title = OriginTitile;    }, 2000);  }});]]></content>
       
     </entry>
     
@@ -448,11 +507,11 @@
     
     
     <entry>
-      <title></title>
-      <link href="/js/title.js"/>
-      <url>/js/title.js</url>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
-        <content type="html"><![CDATA[//动态标题var OriginTitile = document.title;var titleTime;document.addEventListener('visibilitychange', function () {  if (document.hidden) {    //离开当前页面时标签显示内容    document.title = '👀 Where you are? ~';    clearTimeout(titleTime);  } else {    //返回当前页面时标签显示内容    document.title = '🐖 I find you!';    //两秒后变回正常标题    titleTime = setTimeout(function () {      document.title = OriginTitile;    }, 2000);  }});]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -462,17 +521,6 @@
       <title>壁纸</title>
       <link href="/wallpaper/index.html"/>
       <url>/wallpaper/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
