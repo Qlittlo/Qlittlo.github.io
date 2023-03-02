@@ -4,11 +4,11 @@ var titleTime;
 document.addEventListener('visibilitychange', function () {
   if (document.hidden) {
     //离开当前页面时标签显示内容
-    document.title = '👀 Where you are? ~';
+    document.title = 'Qlittle | 👀 Where you are? ~';
     clearTimeout(titleTime);
   } else {
     //返回当前页面时标签显示内容
-    document.title = '🐖 I find you!';
+    document.title = 'Qlittle | 🐖 I find you!';
     //两秒后变回正常标题
     titleTime = setTimeout(function () {
       document.title = OriginTitile;
