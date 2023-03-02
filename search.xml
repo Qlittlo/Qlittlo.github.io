@@ -436,6 +436,17 @@
     
     
     <entry>
+      <title>标签</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
@@ -458,9 +469,9 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>动画</title>
+      <link href="/cartoon/index.html"/>
+      <url>/cartoon/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -491,17 +502,6 @@
     
     
     <entry>
-      <title>动画</title>
-      <link href="/cartoon/index.html"/>
-      <url>/cartoon/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title></title>
       <link href="/js/universe.js"/>
       <url>/js/universe.js</url>
@@ -513,9 +513,9 @@
     
     
     <entry>
-      <title>友情链接</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
+      <title>壁纸</title>
+      <link href="/wallpaper/index.html"/>
+      <url>/wallpaper/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -535,9 +535,9 @@
     
     
     <entry>
-      <title>壁纸</title>
-      <link href="/wallpaper/index.html"/>
-      <url>/wallpaper/index.html</url>
+      <title>友情链接</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
