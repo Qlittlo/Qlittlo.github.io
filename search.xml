@@ -4,27 +4,60 @@
   
     
     <entry>
-      <title>win10配置清单</title>
-      <link href="/2023/03/02/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/"/>
-      <url>/2023/03/02/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/</url>
+      <title>Debian安装</title>
+      <link href="/2023/03/03/Debian%E5%AE%89%E8%A3%85/"/>
+      <url>/2023/03/03/Debian%E5%AE%89%E8%A3%85/</url>
       
-        <content type="html"><![CDATA[<h2 id="IF：从零开始">IF：从零开始</h2><p>如果你准备将电脑进行重装(win10)，请参考该部分(否则请略过)</p><p>如果要倒戈edge浏览器，可以在重装前，将其他浏览器(如chrome)的数据提前导入到edge然后登陆微软账号进行同步。</p><hr><h3 id="重装过程建议">重装过程建议</h3><ol><li><p>重装过程中请务必选择自定义安装，如果想要重新分区，请先<strong>删除</strong>所有分区，然后<strong>新建</strong>再<strong>格式化</strong>，选择系统盘，C盘120G左右即可，根据自己硬盘大小而定。</p></li><li><p>第一次进入系统进行配置的过程，可以选择不联网，直接略过联网过程，这样更快，而且你的用户文件夹(C:/Users/)就是你重装过程中的用户名(请尽量<strong>不要用中文</strong>，一些软件/运行环境，对中文支持不好)。</p></li><li><p>进入熟悉的桌面后：</p><ol><li><p>趁着没有连接网络，可以先清理一下<strong>点击win</strong>时磁贴中的一些还没有安装，联网后安装的软件(不要误杀edge浏览器友军)和小游戏，右键卸载删除就可以。</p></li><li><p>如果你<strong>不想</strong>搞驱动什么的，这个时候就可以连接网络(可以顺便登陆微软账号)，转到系统的<strong>所有设置</strong> =&gt; <strong>更新与安全</strong> =&gt; <strong>Window更新</strong> =&gt; <strong>检查更新</strong>，这部分比较看网（脸），部分网络可能等大半天刷不出来更新，这次更新就是window为电脑自己设配的驱动，可以顺便看一下<strong>激活</strong>有没有激活，一般联网是会自动激活的，没有激活就点击<strong>疑难解答</strong>。</p></li><li><p>如果你<strong>想</strong>用比较新的显卡驱动（上面的方法下载的驱动版本比较老）,可以在联网自动下载驱动前，拷一份对应的显卡驱动，去官网<a href="https://www.nvidia.cn/geforce/drivers/">英伟达驱动</a>：<a href="https://www.nvidia.cn/geforce/drivers/%E9%80%89%E6%8B%A9%E5%AF%B9%E5%BA%94%E6%98%BE%E5%8D%A1%E6%98%BE%E5%8D%A1%E4%B8%8B%E8%BD%BD%EF%BC%8C%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B%E6%AF%94%E8%BE%83%E7%AE%80%E5%8D%95%EF%BC%88%E4%B8%80%E8%88%AC%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B%E5%8F%AA%E8%A6%81Nvidia%E5%9B%BE%E5%BD%A2%E9%A9%B1%E5%8A%A8%E7%A8%8B%E5%BA%8F%E5%8D%B3%E5%8F%AF%E3%80%82%E7%B2%BE%E7%AE%80%E5%AE%89%E8%A3%85%E6%88%96%E8%80%85%E8%87%AA%E5%AE%9A%E4%B9%89%E5%AE%89%E8%A3%85%E5%8B%BE%E9%80%89%E6%B8%85%E6%B4%81%E5%AE%89%E8%A3%85%EF%BC%8C%E5%A6%82%E6%9E%9C%E5%A4%96%E6%8E%A5%E6%98%BE%E7%A4%BA%E5%99%A8%E8%AF%B7%E4%B8%8D%E8%A6%81%E5%8F%96%E6%B6%88%E5%8B%BE%E9%80%89physX%E5%A5%97%E4%BB%B6%EF%BC%89%EF%BC%8C%E7%84%B6%E5%90%8E%E5%86%8D%E8%81%94%E7%BD%91%E8%BF%9B%E8%A1%8C%E4%B8%8A%E8%BF%B0">https://www.nvidia.cn/geforce/drivers/选择对应显卡显卡下载，安装过程比较简单（一般安装过程只要Nvidia图形驱动程序即可。精简安装或者自定义安装勾选清洁安装，如果外接显示器请不要取消勾选physX套件），然后再联网进行上述</a> 2 中的过程，自动适配其他驱动（声卡、网卡什么驱动没有必要追新，稳就完事了，虽然显卡驱动也是）。</p></li><li><p>安装完驱动后就是软件了</p></li></ol></li></ol><hr><h2 id="软件推荐">软件推荐</h2><p><strong>如果和你的使用习惯不一样，怎么喜欢怎么来</strong></p><p>稍微有点系统洁癖，照我这个来，一定没有任何弹窗和广告</p><h3 id="输入法：自带">输入法：自带</h3><p>建议不要额外下载任何输入法，使用window10自带的中文输入法</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123103709568.webp" alt="image-20210123103709568"></p><p>如果同时你是个臭打游戏的，务必额外下载一个英文语言</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123103945451.webp" alt="image-20210123103945451"></p><p>使用<strong>win键 + 空格</strong>进行切换，玩游戏的时候切换到英文，防止连续按两次shift键下蹲变成输入中文被坑了。</p><h3 id="浏览器：自带（Edge）">浏览器：自带（Edge）</h3><p>同样建议使用自带的edge浏览器，同样是谷歌内核相比chrome不需要翻墙配置。<s>如果你是Firefox党当我没说。</s></p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123104623298.webp" alt="image-20210123104623298"></p><p>先在这个时候下载个去广告插件，防止在后面搜索软件的时候广告乱入，在该页面点击**<a href="https://microsoftedge.microsoft.com/addons?hl=zh-CN">获取 Microsoft Edge 扩展</a>**</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123105419123.webp" alt="image-20210123105419123"></p><p>推荐Adblock Plus和uBlock Origin这两款，自己选择一个安装就可以</p><p>其他浏览器插件放后面推荐</p><h3 id="办公套件：Office全家桶">办公套件：Office全家桶</h3><p>我还能说什么呢。。。</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123110418038.webp" alt="image-20210123110418038"></p><h3 id="压缩软件：7-zip">压缩软件：7-zip</h3><p><a href="https://www.7-zip.org/">官网地址</a>：<a href="https://www.7-zip.org/">https://www.7-zip.org/</a></p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123105725301.webp" alt="image-20210123105725301"></p><p><strong>免费开源</strong>的压缩软件，除了<strong>不支持</strong>.rar格式的压缩（介意勿选，但支持解压：压缩算法不开源，解压开源）都很棒。</p><p>下载安装可设置一些文件后缀关联，这样就自动使用7zip进行打开了</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123111307727.webp" alt="image-20210123111307727"></p><h3 id="安全软件：Window安全中心">安全软件：Window安全中心</h3><p>直接裸奔，使用自带的安全中心就可以，不放心可以下载<strong>火绒</strong>。</p><h3 id="实用工具：Dism">实用工具：Dism++</h3><p><a href="http://www.chuyu.me/zh-Hans/">官网地址</a>：<a href="http://www.chuyu.me/zh-Hans/">http://www.chuyu.me/zh-Hans/</a></p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123195725088.webp" alt="image-20210123195725088"></p><p>里面有各种实用的对window的配置，驱动管理、启动项、清扫垃圾（慎用，其实在空间足够的情况下完全没必要清扫系统垃圾，很多所谓的“垃圾”是缓存为了更快速地运行程序），如果电脑很卡请考虑清理垃圾程序后台，老电脑机械换固态，加内存等等。</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123195940058.webp" alt="image-20210123195940058"></p><h3 id="聊天软件：Tim">聊天软件：Tim</h3><p><a href="https://office.qq.com/">官网地址</a>：<a href="https://office.qq.com/">https://office.qq.com/</a></p><p>相比QQ各种花里胡哨的功能，Tim更加简洁为聊天而生。</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123110842118.webp" alt="image-20210123110842118"></p><p>下载后如果，你介意什么东西都往C盘塞（日渐肥胖），第一次启动的时候可以改一下存储路径，<s>聊天记录我这个版本有bug没法自定义，我就干脆把“我的文档”换了个位置然后，放“我的文档”了</s></p><h3 id="PDF阅读器：Sumatra-PDF">PDF阅读器：Sumatra PDF</h3><p><a href="www.sumatrapdfreader.org">官网地址</a>：<a href="http://www.sumatrapdfreader.org">www.sumatrapdfreader.org</a></p><p>浏览器也能查看pdf，但是不方便，没法保存阅读进度和书签。如果你<strong>只是看</strong>pdf那么下载个轻量的阅读器还是有必要的。不过一些配置，需要自己修改配置文件有点硬核。</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123111905951.webp" alt="image-20210123111905951"></p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123111928916.webp" alt="image-20210123111928916"></p><h3 id="录屏推流软件：OBS-Studio">录屏推流软件：OBS Studio</h3><p><a href="https://obsproject.com/">官网地址</a>：<a href="https://obsproject.com/">https://obsproject.com/</a></p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123112436143.webp" alt="image-20210123112436143"></p><p>专业的录屏推流软件用过的都说好！免费开源，不过因为功能太强大反而有点难配置。</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123112523725.webp" alt="image-20210123112523725"></p><p><s>顺便秀一下桌面的屑</s></p><p>PS：如果你是双显卡，可能会无法捕捉到显示器</p><p><strong>桌面上</strong>右键“显示设置” 往下拉有个 <strong>图像设置</strong></p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123112839190.webp" alt="image-20210123112839190"></p><p>一般就可以了，不行再去英伟达管理那把这个软件设置为集成显卡试试。</p><h3 id="剪辑软件：DaVinci-Resolve">剪辑软件：DaVinci Resolve</h3><p><a href="http://www.blackmagicdesign.com/cn/products/davinciresolve/">官网地址</a>:<a href="http://www.blackmagicdesign.com/cn/products/davinciresolve/">http://www.blackmagicdesign.com/cn/products/davinciresolve/</a></p><p>专业级的调色软件，更着更着剪辑功能也变得非常强大，这波啊，这波是路走宽了！</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123113348729.webp" alt="image-20210123113348729"></p><p>分为免费版本和专业收费版本，如果你对Adobe全家桶没有依赖可以试试。英伟达显卡用这个软件建议顺便把CUDA安装上，不太会剪辑就不多说献丑了。。。</p><h3 id="编辑器：Visual-Studio-Code">编辑器：Visual Studio Code</h3><p><a href="https://code.visualstudio.com/">官网地址</a>：<a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123113851735.webp" alt="image-20210123113851735"></p><p>轻量、强大、拓展性强。代码菜鸡也不献丑了。</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123114027223.webp" alt="image-20210123114027223"></p><p>PS：学生党可凭教育邮箱出门左转到<strong>JetBrains</strong>白嫖全家桶，不过今年似乎麻烦点了</p><h3 id="Markdown编辑器：Typora">Markdown编辑器：Typora</h3><p><a href="https://www.typora.io/">官网地址</a>：<a href="https://www.typora.io/">https://www.typora.io/</a></p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123114335827.webp" alt="image-20210123114335827"></p><p>上面的VSCode也可以编辑预览markdown，但是这个可以直接在原文渲染，说不上轻量但用起来很舒服，功能很全面。</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123114529035.webp" alt="image-20210123114529035"></p><h3 id="任务栏透明：TranslucentTB">任务栏透明：TranslucentTB</h3><p>Microsoft Store搜索下载安装即可，免费软件。</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123114913123.webp" alt="image-20210123114913123"></p><h3 id="壁纸软件：Wallpaper-Engine">壁纸软件：Wallpaper Engine</h3><p>嗯~，就挺<strong>正经</strong>的一个壁纸软件。<s>不是，警察叔叔你听我狡辩！</s></p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123115139080.webp" alt="image-20210123115139080"></p><h3 id="下载器-我的世界启动器：PCL2"><s>下载器</s> 我的世界启动器：PCL2</h3><p>不要误会，这确实是一个我的世界启动器，但是它百宝箱里的下载工具真的是太好用的ahh。当然它也是非常优秀地我的世界启动器，不过目前还是内测，内测版本需要付费体验。</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123200955394.webp" alt="image-20210123200955394"></p><h2 id="浏览器插件">浏览器插件</h2><h3 id="uBlock-Origin">uBlock Origin</h3><p>去广告，不多说了。</p><h3 id="Tampermonkey">Tampermonkey</h3><p>插件中的神器！玩法巨多，自行探索。</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/52d13a68afe8dec6.webp" alt="52d13a68afe8dec6"></p><h3 id="Infinity-新标签页-Pro">Infinity 新标签页 (Pro)</h3><p>可以让你的浏览器更漂亮和易用</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123115739927.webp" alt="image-20210123115739927"></p><h3 id="Dark-Reader">Dark Reader</h3><p>如果你好奇为什么我截的官网图都是深色，这个就是原因。</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123115903648.webp" alt="image-20210123115903648"></p><h3 id="Vimium-C">Vimium C</h3><p>如果你用过Vim编辑器，那么使用这个插件你可以实现全键盘操作浏览器。</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123120011971.webp" alt="image-20210123120011971"></p><p>基本操作也不难学，如果感兴趣可以学学还是很方便的。vim也可以学学毕竟”编辑器之神“嘛（滑稽）。</p>]]></content>
+        <content type="html"><![CDATA[<p>这里以Debian11的Vbox虚拟机最小化安装为例</p><h2 id="准备工作">准备工作</h2><h3 id="Debian镜像准备">Debian镜像准备</h3><p><a href="https://www.debian.org/index.zh-cn.html">Debian</a>官网为：www.debian.orgindex.zh-cn.html</p><p>点击<strong>下载Debian</strong>便可以下载网络镜像</p><h3 id="VirtualBox安装">VirtualBox安装</h3><p><a href="https://github.com/DavidAnson/markdownlint/blob/v0.27.0/doc/md025.md">VirtualBox</a>官网为：<a href="http://www.virtualbox.org">www.virtualbox.org</a></p><p>点击下载后选择对应平台即可，如果是window选择windows host这个选项</p><p>顺便下载下Extension Pack，就在下面，这个拓展可以极大增强vbox对Linux的各种支持，比如剪切板共享，共享文件夹等等，如果后期安装一些桌面环境，再安装这个拓展也可，毕竟最小化安装一般都是用ssh。</p><blockquote><p>PS: VirtualBox后面将会简称为vbox</p></blockquote><h3 id="VBox设置">VBox设置</h3><p>打开Vbox，如图新建虚拟机</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/Debian%E5%AE%89%E8%A3%85/2023-03-02-23-46-22.webp" alt="虚拟机界面"></p><p>后续界面依照自己电脑配置修改即可，内存给个4G，核心给4个，存储20G绰绰有余。</p><p>加载Debian11镜像文件</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/Debian%E5%AE%89%E8%A3%85/2023-03-02-23-49-50.webp" alt="加载镜像"></p><h4 id="设置端口转发">设置端口转发</h4><p>设置下端口转发，便于后续使用ssh（tty实在是不好用）</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/Debian%E5%AE%89%E8%A3%85/2023-03-02-23-52-20.webp" alt="端口转发"></p><table><thead><tr><th>名称</th><th style="text-align:center">协议</th><th style="text-align:right">主机IP</th><th style="text-align:center">主机端口</th><th style="text-align:center">子系统IP</th><th style="text-align:center">子系统端口</th></tr></thead><tbody><tr><td>ssh</td><td style="text-align:center">TCP</td><td style="text-align:right"></td><td style="text-align:center">2222</td><td style="text-align:center"></td><td style="text-align:center">222</td></tr><tr><td>ftp</td><td style="text-align:center">TCP</td><td style="text-align:right"></td><td style="text-align:center">2121</td><td style="text-align:center"></td><td style="text-align:center">2121</td></tr></tbody></table><h2 id="Debian正式安装">Debian正式安装</h2><p>启动虚拟机！</p><p>选择第一个选项即可</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/Debian%E5%AE%89%E8%A3%85/2023-03-02-23-56-07.webp" alt="欢迎界面"></p><h3 id="语言-时区">语言&amp;时区</h3><p>语言地区按照中国来选就行，英文好选美国的习惯，这里不会影响包镜像。</p><h3 id="配置网络">配置网络</h3><p>主机名随便，尽量不要用中文</p><h3 id="设置root用户与密码">设置root用户与密码</h3><blockquote><p>root用户密码<strong>请务必牢记，务必牢记，务必牢记</strong></p></blockquote><h3 id="设置普通用户与密码">设置普通用户与密码</h3><p>请便</p><h3 id="磁盘分区">磁盘分区</h3><p>由于这里使用是虚拟机所以我直接按照推荐的分区走了</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/Debian%E5%AE%89%E8%A3%85/2023-03-03-00-03-11.webp" alt="分区"></p><p>所有文件放在同一个文件的方案在虚拟机下还是比较合适的，详细分区教程以后可能会发（挖坑）</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/Debian%E5%AE%89%E8%A3%85/2023-03-03-00-03-33.webp" alt="分区方案"></p><p>点击<strong>结束分区并将修改写入硬盘</strong></p><p>这里点<strong>是</strong></p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/Debian%E5%AE%89%E8%A3%85/2023-03-03-00-06-09.webp" alt="确定"></p><h3 id="配置软件包管理器">配置软件包管理器</h3><p>选择中国后会有很多选项，浙大、清华、北外、163的都挺好用的，这里用的浙大的</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/Debian%E5%AE%89%E8%A3%85/2023-03-03-00-12-10.webp" alt="包管理"></p><p>选择好后便开始安装一些基本软件，请耐心等待，这一步收网络影响较大</p><h3 id="软件选择">软件选择</h3><p>既然是最小化安装那就不安装桌面环境，后续可以自己装，一条命令的事情。</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/Debian%E5%AE%89%E8%A3%85/2023-03-03-00-14-55.webp" alt="软件选择"></p><blockquote><p>这里同样受网络影响较大，如果频发卡住，上面选择软件源的地方换个源试试。</p></blockquote><h3 id="安装grub">安装grub</h3><p>这里很重要！！！</p><p>点击/dev/sda 这个选项</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/Debian%E5%AE%89%E8%A3%85/2023-03-03-00-17-37.webp" alt="手动选择"></p><p><strong>大功告成！</strong></p><h2 id="Debian的基本设置">Debian的基本设置</h2><h3 id="第一次登陆">第一次登陆</h3><p>使用root用户</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/Debian%E5%AE%89%E8%A3%85/2023-03-03-00-20-31.webp" alt="root"></p><p>进行一次系统更新，一般来说网络安装就是最新。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">apt update</span><br><span class="line">apt upgrade</span><br></pre></td></tr></table></figure><blockquote><p>这里可能有一堆方块的乱码。不必惊慌，这是因为tty没法渲染中文字体，所以安装过程中我提到英文不错的选美国也不错……</p></blockquote><h4 id="安装sudo">安装sudo</h4><p>一般我们都是使用具有sudo权限的普通用户使用</p><p>debian默认用户是没有sudo权限的，使用以下指令开启</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// 安装sudo</span><br><span class="line">apt install sudo</span><br><span class="line">// 这里的user_name请改为安装过程中你的用户名</span><br><span class="line">adduser user_name sudo</span><br></pre></td></tr></table></figure><p>退出root用户</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">exit</span><br></pre></td></tr></table></figure><p>进行到这里我们便可以将这个虚拟机挂一边了(不是关闭窗口)</p><h2 id="SSH">SSH</h2><p>我们使用ssh便可以远程登陆，不再忍受tty的苦难。（确保上述安装过程中软件选择中勾选ssh）</p><p>打开win11自带的终端软件，没有可以用win10的powershell</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/Debian%E5%AE%89%E8%A3%85/2023-03-03-00-30-25.webp" alt="终端"></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 同样改一下user_name为你的id</span><br><span class="line">ssh -p 2222 user_name@localhost</span><br></pre></td></tr></table></figure><blockquote><p>//使用该命令后，如果已经安装，会提示你是否接收服务器发给你的公钥，并让你输入yes/no，此时输入 yes 。这样才能对你发给服务器的信息进行加密。</p></blockquote><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/Debian%E5%AE%89%E8%A3%85/2023-03-03-00-34-17.webp" alt="链接成功"></p><h2 id="其他设置">其他设置</h2><h3 id="zsh">zsh</h3><p>详细请看站内文章</p><h3 id="桌面环境">桌面环境</h3><p>同上</p>]]></content>
       
       
       <categories>
           
           <category> 系统 </category>
           
-          <category> window </category>
+          <category> Linux </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> window </tag>
+            <tag> Linux </tag>
             
-            <tag> win10 </tag>
+            <tag> 配置 </tag>
+            
+            <tag> 安装教程 </tag>
+            
+            <tag> 虚拟机 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Win10配置清单</title>
+      <link href="/2023/03/02/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/"/>
+      <url>/2023/03/02/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/</url>
+      
+        <content type="html"><![CDATA[<h2 id="IF：从零开始">IF：从零开始</h2><p>如果你准备将电脑进行重装(win10)，请参考该部分(否则请略过)</p><p>如果要倒戈edge浏览器，可以在重装前，将其他浏览器(如chrome)的数据提前导入到edge然后登陆微软账号进行同步。</p><hr><h3 id="重装过程建议">重装过程建议</h3><ol><li><p>重装过程中请务必选择自定义安装，如果想要重新分区，请先<strong>删除</strong>所有分区，然后<strong>新建</strong>再<strong>格式化</strong>，选择系统盘，C盘120G左右即可，根据自己硬盘大小而定。</p></li><li><p>第一次进入系统进行配置的过程，可以选择不联网，直接略过联网过程，这样更快，而且你的用户文件夹(C:/Users/)就是你重装过程中的用户名(请尽量<strong>不要用中文</strong>，一些软件/运行环境，对中文支持不好)。</p></li><li><p>进入熟悉的桌面后：</p><ol><li><p>趁着没有连接网络，可以先清理一下<strong>点击win</strong>时磁贴中的一些还没有安装，联网后安装的软件(不要误杀edge浏览器友军)和小游戏，右键卸载删除就可以。</p></li><li><p>如果你<strong>不想</strong>搞驱动什么的，这个时候就可以连接网络(可以顺便登陆微软账号)，转到系统的<strong>所有设置</strong> =&gt; <strong>更新与安全</strong> =&gt; <strong>Window更新</strong> =&gt; <strong>检查更新</strong>，这部分比较看网（脸），部分网络可能等大半天刷不出来更新，这次更新就是window为电脑自己设配的驱动，可以顺便看一下<strong>激活</strong>有没有激活，一般联网是会自动激活的，没有激活就点击<strong>疑难解答</strong>。</p></li><li><p>如果你<strong>想</strong>用比较新的显卡驱动（上面的方法下载的驱动版本比较老）,可以在联网自动下载驱动前，拷一份对应的显卡驱动，去官网<a href="https://www.nvidia.cn/geforce/drivers/">英伟达驱动</a>：<a href="http://www.nvidia.cn/geforce/drivers/">www.nvidia.cn/geforce/drivers/</a> 选择对应显卡显卡下载，安装过程比较简单（一般安装过程只要Nvidia图形驱动程序即可。精简安装或者自定义安装勾选清洁安装，如果外接显示器请不要取消勾选physX套件），然后再联网进行上述 2 中的过程，自动适配其他驱动（声卡、网卡什么驱动没有必要追新，稳就完事了，虽然显卡驱动也是）。</p></li><li><p>安装完驱动后就是软件了</p></li></ol></li></ol><hr><h2 id="软件推荐">软件推荐</h2><blockquote><p><strong>如果和你的使用习惯不一样，怎么喜欢怎么来</strong></p></blockquote><p>稍微有点系统洁癖，照我这个来，一定没有任何弹窗和广告</p><h3 id="输入法：自带">输入法：自带</h3><p>建议不要额外下载任何输入法，使用window10自带的中文输入法</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123103709568.webp" alt="image-20210123103709568"></p><p>如果同时你是个臭打游戏的，务必额外下载一个英文语言</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123103945451.webp" alt="image-20210123103945451"></p><p>使用<strong>win键 + 空格</strong>进行切换，玩游戏的时候切换到英文，防止连续按两次shift键下蹲变成输入中文被坑了。</p><h3 id="浏览器：自带（Edge）">浏览器：自带（Edge）</h3><p>同样建议使用自带的edge浏览器，同样是谷歌内核相比chrome不需要翻墙配置。<s>如果你是Firefox党当我没说。</s></p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123104623298.webp" alt="image-20210123104623298"></p><p>先在这个时候下载个去广告插件，防止在后面搜索软件的时候广告乱入，在该页面点击**<a href="https://microsoftedge.microsoft.com/addons?hl=zh-CN">获取 Microsoft Edge 扩展</a>**</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123105419123.webp" alt="image-20210123105419123"></p><p>推荐Adblock Plus和uBlock Origin这两款，自己选择一个安装就可以</p><p>其他浏览器插件放后面推荐</p><h3 id="办公套件：Office全家桶">办公套件：Office全家桶</h3><p>我还能说什么呢。。。</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123110418038.webp" alt="image-20210123110418038"></p><h3 id="压缩软件：7-zip">压缩软件：7-zip</h3><p><a href="https://www.7-zip.org/">官网地址</a>：<a href="http://www.7-zip.org">www.7-zip.org</a></p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123105725301.webp" alt="image-20210123105725301"></p><p><strong>免费开源</strong>的压缩软件，除了<strong>不支持</strong>.rar格式的压缩（介意勿选，但支持解压：压缩算法不开源，解压开源）都很棒。</p><p>下载安装可设置一些文件后缀关联，这样就自动使用7zip进行打开了</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123111307727.webp" alt="image-20210123111307727"></p><h3 id="安全软件：Window安全中心">安全软件：Window安全中心</h3><p>直接裸奔，使用自带的安全中心就可以，不放心可以下载<strong>火绒</strong>。</p><h3 id="实用工具：Dism">实用工具：Dism++</h3><p><a href="http://www.chuyu.me/zh-Hans/">官网地址</a>：<a href="http://www.chuyu.me/zh-Hans">www.chuyu.me/zh-Hans</a></p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123195725088.webp" alt="image-20210123195725088"></p><p>里面有各种实用的对window的配置，驱动管理、启动项、清扫垃圾（慎用，其实在空间足够的情况下完全没必要清扫系统垃圾，很多所谓的“垃圾”是缓存为了更快速地运行程序），如果电脑很卡请考虑清理垃圾程序后台，老电脑机械换固态，加内存等等。</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123195940058.webp" alt="image-20210123195940058"></p><h3 id="聊天软件：Tim">聊天软件：Tim</h3><p><a href="https://office.qq.com/">官网地址</a>：<a href="http://office.qq.com">office.qq.com</a></p><p>相比QQ各种花里胡哨的功能，Tim更加简洁为聊天而生。</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123110842118.webp" alt="image-20210123110842118"></p><p>下载后如果，你介意什么东西都往C盘塞（日渐肥胖），第一次启动的时候可以改一下存储路径，<s>聊天记录我这个版本有bug没法自定义，我就干脆把“我的文档”换了个位置然后，放“我的文档”了</s></p><h3 id="PDF阅读器：Sumatra-PDF">PDF阅读器：Sumatra PDF</h3><p><a href="www.sumatrapdfreader.org">官网地址</a>：<a href="http://www.sumatrapdfreader.org">www.sumatrapdfreader.org</a></p><p>浏览器也能查看pdf，但是不方便，没法保存阅读进度和书签。如果你<strong>只是看</strong>pdf那么下载个轻量的阅读器还是有必要的。不过一些配置，需要自己修改配置文件有点硬核。</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123111905951.webp" alt="image-20210123111905951"></p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123111928916.webp" alt="image-20210123111928916"></p><h3 id="录屏推流软件：OBS-Studio">录屏推流软件：OBS Studio</h3><p><a href="https://obsproject.com/">官网地址</a>：<a href="http://obsproject.com">obsproject.com</a></p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123112436143.webp" alt="image-20210123112436143"></p><p>专业的录屏推流软件用过的都说好！免费开源，不过因为功能太强大反而有点难配置。</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123112523725.webp" alt="image-20210123112523725"></p><p><s>顺便秀一下桌面的屑</s></p><p>PS：如果你是双显卡，可能会无法捕捉到显示器</p><p><strong>桌面上</strong>右键“显示设置” 往下拉有个 <strong>图像设置</strong></p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123112839190.webp" alt="image-20210123112839190"></p><p>一般就可以了，不行再去英伟达管理那把这个软件设置为集成显卡试试。</p><h3 id="剪辑软件：DaVinci-Resolve">剪辑软件：DaVinci Resolve</h3><p><a href="http://www.blackmagicdesign.com/cn/products/davinciresolve/">官网地址</a>:www.blackmagicdesign.com/cn/products/davinciresolve</p><p>专业级的调色软件，更着更着剪辑功能也变得非常强大，这波啊，这波是路走宽了！</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123113348729.webp" alt="image-20210123113348729"></p><p>分为免费版本和专业收费版本，如果你对Adobe全家桶没有依赖可以试试。英伟达显卡用这个软件建议顺便把CUDA安装上，不太会剪辑就不多说献丑了。。。</p><h3 id="编辑器：Visual-Studio-Code">编辑器：Visual Studio Code</h3><p><a href="https://code.visualstudio.com/">官网地址</a>：<a href="http://code.visualstudio.com">code.visualstudio.com</a></p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123113851735.webp" alt="image-20210123113851735"></p><p>轻量、强大、拓展性强。代码菜鸡也不献丑了。</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123114027223.webp" alt="image-20210123114027223"></p><p>PS：学生党可凭教育邮箱出门左转到<strong>JetBrains</strong>白嫖全家桶，不过今年似乎麻烦点了</p><h3 id="Markdown编辑器：Typora">Markdown编辑器：Typora</h3><p><a href="https://www.typora.io/">官网地址</a>：<a href="http://www.typora.io">www.typora.io</a></p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123114335827.webp" alt="image-20210123114335827"></p><p>上面的VSCode也可以编辑预览markdown，但是这个可以直接在原文渲染，说不上轻量但用起来很舒服，功能很全面。</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123114529035.webp" alt="image-20210123114529035"></p><h3 id="任务栏透明：TranslucentTB">任务栏透明：TranslucentTB</h3><p>Microsoft Store搜索下载安装即可，免费软件。</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123114913123.webp" alt="image-20210123114913123"></p><h3 id="壁纸软件：Wallpaper-Engine">壁纸软件：Wallpaper Engine</h3><p>嗯~，就挺<strong>正经</strong>的一个壁纸软件。<s>不是，警察叔叔你听我狡辩！</s></p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123115139080.webp" alt="image-20210123115139080"></p><h3 id="下载器-我的世界启动器：PCL2"><s>下载器</s> 我的世界启动器：PCL2</h3><p>不要误会，这确实是一个我的世界启动器，但是它百宝箱里的下载工具真的是太好用的ahh。当然它也是非常优秀地我的世界启动器，不过目前还是内测，内测版本需要付费体验。</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123200955394.webp" alt="image-20210123200955394"></p><h2 id="浏览器插件">浏览器插件</h2><h3 id="uBlock-Origin">uBlock Origin</h3><p>去广告，不多说了。</p><h3 id="Tampermonkey">Tampermonkey</h3><p>插件中的神器！玩法巨多，自行探索。</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/52d13a68afe8dec6.webp" alt="52d13a68afe8dec6"></p><h3 id="Infinity-新标签页-Pro">Infinity 新标签页 (Pro)</h3><p>可以让你的浏览器更漂亮和易用</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123115739927.webp" alt="image-20210123115739927"></p><h3 id="Dark-Reader">Dark Reader</h3><p>如果你好奇为什么我截的官网图都是深色，这个就是原因。</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123115903648.webp" alt="image-20210123115903648"></p><h3 id="Vimium-C">Vimium C</h3><p>如果你用过Vim编辑器，那么使用这个插件你可以实现全键盘操作浏览器。</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/win10%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/image-20210123120011971.webp" alt="image-20210123120011971"></p><p>基本操作也不难学，如果感兴趣可以学学还是很方便的。vim也可以学学毕竟”编辑器之神“嘛（滑稽）。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 系统 </category>
+          
+          <category> Window </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Window </tag>
+            
+            <tag> Win10 </tag>
             
             <tag> 系统 </tag>
             
@@ -37,7 +70,7 @@
     
     
     <entry>
-      <title>markdown入门</title>
+      <title>Markdown入门</title>
       <link href="/2023/03/02/markdown%E5%85%A5%E9%97%A8/"/>
       <url>/2023/03/02/markdown%E5%85%A5%E9%97%A8/</url>
       
@@ -48,14 +81,14 @@
           
           <category> 小知识 </category>
           
-          <category> markdown </category>
+          <category> Markdown </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> markdown </tag>
+            <tag> Markdown </tag>
             
             <tag> 小知识 </tag>
             
@@ -517,8 +550,6 @@
           
           <category> Linux </category>
           
-          <category> 配置 </category>
-          
       </categories>
       
       
@@ -598,33 +629,11 @@
     
     
     <entry>
-      <title>关于</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>动画</title>
       <link href="/cartoon/index.html"/>
       <url>/cartoon/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/css/custom.css"/>
-      <url>/css/custom.css</url>
-      
-        <content type="html"><![CDATA[/* 页脚与头图透明 */#footer {    background: transparent !important;  }  #page-header {    background: transparent !important;  }    /* 白天模式遮罩透明 */  #footer::before {    background: transparent !important;  }  #page-header::before {    background: transparent !important;  }    /* 夜间模式遮罩透明 */  [data-theme="dark"] #footer::before {    background: transparent !important;  }  [data-theme="dark"] #page-header::before {    background: transparent !important;  }/* 全局宽度 */.layout {  max-width: 1400px;}/* 侧边卡片栏宽度 */.aside-content {  max-width: 318px;  min-width: 300px;}/* 平板尺寸自适应(不启用侧边栏宽度限制) */@media screen and (max-width: 900px) {  .aside-content {    max-width: none !important;    padding: 0 5px 0 5px;  }}/* 除了首页以外其他页面隐藏卡片，并采用宽屏显示 */#archive,#page,#category,#tag {  width: 100%;}.page:not(.page.home) .aside-content {  display: none;}/* 翻页按钮居中 */#pagination {  width: 100%;  margin: auto;}:root {  --trans-light: rgba(255, 255, 255, 0.88);  --trans-dark: rgba(25, 25, 25, 0.88);  --border-style: 1px solid rgb(169, 169, 169);  --backdrop-filter: blur(5px) saturate(150%);}/* 首页文章卡片 */#recent-posts > .recent-post-item {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border-radius: 25px;  border: var(--border-style);}/* 首页侧栏卡片 */#aside-content .card-widget {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border-radius: 18px;  border: var(--border-style);}/* 文章页、归档页、普通页面 */div#post,div#page,div#archive {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border: var(--border-style);  border-radius: 20px;}/* 导航栏 */#page-header.nav-fixed #nav {  background: rgba(255, 255, 255, 0.75);  backdrop-filter: var(--backdrop-filter);}[data-theme="dark"] #page-header.nav-fixed #nav {  background: rgba(0, 0, 0, 0.7) !important;}/* 夜间模式遮罩 */[data-theme="dark"] #recent-posts > .recent-post-item,[data-theme="dark"] #aside-content .card-widget,[data-theme="dark"] div#post,[data-theme="dark"] div#archive,[data-theme="dark"] div#page {  background: var(--trans-dark);}/* 夜间模式页脚页头遮罩透明 */[data-theme="dark"] #footer::before {  background: transparent !important;}[data-theme="dark"] #page-header::before {  background: transparent !important;}/* 阅读模式 */.read-mode #aside-content .card-widget {  background: rgba(158, 204, 171, 0.5) !important;}.read-mode div#post {  background: rgba(158, 204, 171, 0.5) !important;}/* 夜间模式下的阅读模式 */[data-theme="dark"] .read-mode #aside-content .card-widget {  background: rgba(25, 25, 25, 0.9) !important;  color: #ffffff;}[data-theme="dark"] .read-mode div#post {  background: rgba(25, 25, 25, 0.9) !important;  color: #ffffff;}/* 字体 */@font-face {  /* 为载入的字体取名字(随意) */  font-family: 'DEYI';  /* 字体文件地址(相对或者绝对路径都可以) */  src: url(/font/deyi.woff2);  /* 定义加粗样式(加粗多少) */  font-weight: normal;  /* 定义字体样式(斜体/非斜体) */  font-style: normal;  /* 定义显示样式 */  font-display: block;}]]></content>
       
     </entry>
     
@@ -642,31 +651,9 @@
     
     
     <entry>
-      <title>友情链接</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/js/universe.js"/>
-      <url>/js/universe.js</url>
-      
-        <content type="html"><![CDATA[function dark() {window.requestAnimationFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;var n,e,i,h,t=.05,s=document.getElementById("universe"),o=!0,a="180,184,240",r="226,225,142",d="226,225,224",c=[];function f(){n=window.innerWidth,e=window.innerHeight,i=.216*n,s.setAttribute("width",n),s.setAttribute("height",e)}function u(){h.clearRect(0,0,n,e);for(var t=c.length,i=0;i<t;i++){var s=c[i];s.move(),s.fadeIn(),s.fadeOut(),s.draw()}}function y(){this.reset=function(){this.giant=m(3),this.comet=!this.giant&&!o&&m(10),this.x=l(0,n-10),this.y=l(0,e),this.r=l(1.1,2.6),this.dx=l(t,6*t)+(this.comet+1-1)*t*l(50,120)+2*t,this.dy=-l(t,6*t)-(this.comet+1-1)*t*l(50,120),this.fadingOut=null,this.fadingIn=!0,this.opacity=0,this.opacityTresh=l(.2,1-.4*(this.comet+1-1)),this.do=l(5e-4,.002)+.001*(this.comet+1-1)},this.fadeIn=function(){this.fadingIn&&(this.fadingIn=!(this.opacity>this.opacityTresh),this.opacity+=this.do)},this.fadeOut=function(){this.fadingOut&&(this.fadingOut=!(this.opacity<0),this.opacity-=this.do/2,(this.x>n||this.y<0)&&(this.fadingOut=!1,this.reset()))},this.draw=function(){if(h.beginPath(),this.giant)h.fillStyle="rgba("+a+","+this.opacity+")",h.arc(this.x,this.y,2,0,2*Math.PI,!1);else if(this.comet){h.fillStyle="rgba("+d+","+this.opacity+")",h.arc(this.x,this.y,1.5,0,2*Math.PI,!1);for(var t=0;t<30;t++)h.fillStyle="rgba("+d+","+(this.opacity-this.opacity/20*t)+")",h.rect(this.x-this.dx/4*t,this.y-this.dy/4*t-2,2,2),h.fill()}else h.fillStyle="rgba("+r+","+this.opacity+")",h.rect(this.x,this.y,this.r,this.r);h.closePath(),h.fill()},this.move=function(){this.x+=this.dx,this.y+=this.dy,!1===this.fadingOut&&this.reset(),(this.x>n-n/4||this.y<0)&&(this.fadingOut=!0)},setTimeout(function(){o=!1},50)}function m(t){return Math.floor(1e3*Math.random())+1<10*t}function l(t,i){return Math.random()*(i-t)+t}f(),window.addEventListener("resize",f,!1),function(){h=s.getContext("2d");for(var t=0;t<i;t++)c[t]=new y,c[t].reset();u()}(),function t(){document.getElementsByTagName('html')[0].getAttribute('data-theme')=='dark'&&u(),window.requestAnimationFrame(t)}()};dark()]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>音乐</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
+      <title>关于</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -687,6 +674,28 @@
     
     <entry>
       <title></title>
+      <link href="/css/custom.css"/>
+      <url>/css/custom.css</url>
+      
+        <content type="html"><![CDATA[/* 页脚与头图透明 */#footer {    background: transparent !important;  }  #page-header {    background: transparent !important;  }    /* 白天模式遮罩透明 */  #footer::before {    background: transparent !important;  }  #page-header::before {    background: transparent !important;  }    /* 夜间模式遮罩透明 */  [data-theme="dark"] #footer::before {    background: transparent !important;  }  [data-theme="dark"] #page-header::before {    background: transparent !important;  }/* 全局宽度 */.layout {  max-width: 1400px;}/* 侧边卡片栏宽度 */.aside-content {  max-width: 318px;  min-width: 300px;}/* 平板尺寸自适应(不启用侧边栏宽度限制) */@media screen and (max-width: 900px) {  .aside-content {    max-width: none !important;    padding: 0 5px 0 5px;  }}/* 除了首页以外其他页面隐藏卡片，并采用宽屏显示 */#archive,#page,#category,#tag {  width: 100%;}.page:not(.page.home) .aside-content {  display: none;}/* 翻页按钮居中 */#pagination {  width: 100%;  margin: auto;}:root {  --trans-light: rgba(255, 255, 255, 0.88);  --trans-dark: rgba(25, 25, 25, 0.88);  --border-style: 1px solid rgb(169, 169, 169);  --backdrop-filter: blur(5px) saturate(150%);}/* 首页文章卡片 */#recent-posts > .recent-post-item {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border-radius: 25px;  border: var(--border-style);}/* 首页侧栏卡片 */#aside-content .card-widget {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border-radius: 18px;  border: var(--border-style);}/* 文章页、归档页、普通页面 */div#post,div#page,div#archive {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border: var(--border-style);  border-radius: 20px;}/* 导航栏 */#page-header.nav-fixed #nav {  background: rgba(255, 255, 255, 0.75);  backdrop-filter: var(--backdrop-filter);}[data-theme="dark"] #page-header.nav-fixed #nav {  background: rgba(0, 0, 0, 0.7) !important;}/* 夜间模式遮罩 */[data-theme="dark"] #recent-posts > .recent-post-item,[data-theme="dark"] #aside-content .card-widget,[data-theme="dark"] div#post,[data-theme="dark"] div#archive,[data-theme="dark"] div#page {  background: var(--trans-dark);}/* 夜间模式页脚页头遮罩透明 */[data-theme="dark"] #footer::before {  background: transparent !important;}[data-theme="dark"] #page-header::before {  background: transparent !important;}/* 阅读模式 */.read-mode #aside-content .card-widget {  background: rgba(158, 204, 171, 0.5) !important;}.read-mode div#post {  background: rgba(158, 204, 171, 0.5) !important;}/* 夜间模式下的阅读模式 */[data-theme="dark"] .read-mode #aside-content .card-widget {  background: rgba(25, 25, 25, 0.9) !important;  color: #ffffff;}[data-theme="dark"] .read-mode div#post {  background: rgba(25, 25, 25, 0.9) !important;  color: #ffffff;}/* 字体 */@font-face {  /* 为载入的字体取名字(随意) */  font-family: 'DEYI';  /* 字体文件地址(相对或者绝对路径都可以) */  src: url(/font/deyi.woff2);  /* 定义加粗样式(加粗多少) */  font-weight: normal;  /* 定义字体样式(斜体/非斜体) */  font-style: normal;  /* 定义显示样式 */  font-display: block;}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/js/universe.js"/>
+      <url>/js/universe.js</url>
+      
+        <content type="html"><![CDATA[function dark() {window.requestAnimationFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;var n,e,i,h,t=.05,s=document.getElementById("universe"),o=!0,a="180,184,240",r="226,225,142",d="226,225,224",c=[];function f(){n=window.innerWidth,e=window.innerHeight,i=.216*n,s.setAttribute("width",n),s.setAttribute("height",e)}function u(){h.clearRect(0,0,n,e);for(var t=c.length,i=0;i<t;i++){var s=c[i];s.move(),s.fadeIn(),s.fadeOut(),s.draw()}}function y(){this.reset=function(){this.giant=m(3),this.comet=!this.giant&&!o&&m(10),this.x=l(0,n-10),this.y=l(0,e),this.r=l(1.1,2.6),this.dx=l(t,6*t)+(this.comet+1-1)*t*l(50,120)+2*t,this.dy=-l(t,6*t)-(this.comet+1-1)*t*l(50,120),this.fadingOut=null,this.fadingIn=!0,this.opacity=0,this.opacityTresh=l(.2,1-.4*(this.comet+1-1)),this.do=l(5e-4,.002)+.001*(this.comet+1-1)},this.fadeIn=function(){this.fadingIn&&(this.fadingIn=!(this.opacity>this.opacityTresh),this.opacity+=this.do)},this.fadeOut=function(){this.fadingOut&&(this.fadingOut=!(this.opacity<0),this.opacity-=this.do/2,(this.x>n||this.y<0)&&(this.fadingOut=!1,this.reset()))},this.draw=function(){if(h.beginPath(),this.giant)h.fillStyle="rgba("+a+","+this.opacity+")",h.arc(this.x,this.y,2,0,2*Math.PI,!1);else if(this.comet){h.fillStyle="rgba("+d+","+this.opacity+")",h.arc(this.x,this.y,1.5,0,2*Math.PI,!1);for(var t=0;t<30;t++)h.fillStyle="rgba("+d+","+(this.opacity-this.opacity/20*t)+")",h.rect(this.x-this.dx/4*t,this.y-this.dy/4*t-2,2,2),h.fill()}else h.fillStyle="rgba("+r+","+this.opacity+")",h.rect(this.x,this.y,this.r,this.r);h.closePath(),h.fill()},this.move=function(){this.x+=this.dx,this.y+=this.dy,!1===this.fadingOut&&this.reset(),(this.x>n-n/4||this.y<0)&&(this.fadingOut=!0)},setTimeout(function(){o=!1},50)}function m(t){return Math.floor(1e3*Math.random())+1<10*t}function l(t,i){return Math.random()*(i-t)+t}f(),window.addEventListener("resize",f,!1),function(){h=s.getContext("2d");for(var t=0;t<i;t++)c[t]=new y,c[t].reset();u()}(),function t(){document.getElementsByTagName('html')[0].getAttribute('data-theme')=='dark'&&u(),window.requestAnimationFrame(t)}()};dark()]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
       <link href="/js/title.js"/>
       <url>/js/title.js</url>
       
@@ -697,9 +706,20 @@
     
     
     <entry>
-      <title>壁纸</title>
-      <link href="/wallpaper/index.html"/>
-      <url>/wallpaper/index.html</url>
+      <title>友情链接</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>音乐</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -711,6 +731,17 @@
       <title>标签</title>
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>壁纸</title>
+      <link href="/wallpaper/index.html"/>
+      <url>/wallpaper/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
