@@ -24,9 +24,9 @@
             
             <tag> Linux </tag>
             
-            <tag> 安装教程 </tag>
-            
             <tag> 配置 </tag>
+            
+            <tag> 安装教程 </tag>
             
             <tag> 虚拟机 </tag>
             
@@ -55,13 +55,13 @@
       
         <tags>
             
-            <tag> 配置 </tag>
-            
             <tag> Window </tag>
             
             <tag> Win10 </tag>
             
             <tag> 系统 </tag>
+            
+            <tag> 配置 </tag>
             
         </tags>
       
@@ -80,8 +80,6 @@
       <categories>
           
           <category> 小知识 </category>
-          
-          <category> Markdown </category>
           
       </categories>
       
@@ -651,22 +649,22 @@
     
     
     <entry>
-      <title>关于</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
-        <content type="html"><![CDATA[<h2 id="有什么可以为你解答的可以通过邮箱交流，感谢你的浏览">有什么可以为你解答的可以通过邮箱交流，感谢你的浏览</h2>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>关于</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h2 id="有什么可以为你解答的可以通过邮箱交流，感谢你的浏览">有什么可以为你解答的可以通过邮箱交流，感谢你的浏览</h2>]]></content>
       
     </entry>
     
@@ -685,43 +683,10 @@
     
     <entry>
       <title></title>
-      <link href="/css/universe.css"/>
-      <url>/css/universe.css</url>
-      
-        <content type="html"><![CDATA[/* 背景宇宙星光  */#universe{    display: block;    position: fixed;    margin: 0;    padding: 0;    border: 0;    outline: 0;    left: 0;    top: 0;    width: 100%;    height: 100%;    pointer-events: none;    /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */    z-index: -1;  }]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
       <link href="/js/title.js"/>
       <url>/js/title.js</url>
       
-        <content type="html"><![CDATA[//动态标题var OriginTitile = document.title;var titleTime;document.addEventListener('visibilitychange', function () {  if (document.hidden) {    //离开当前页面时标签显示内容    document.title = 'Qlittle | 👀 Where you are? ~';    clearTimeout(titleTime);  } else {    //返回当前页面时标签显示内容    document.title = 'Qlittle | 🐖 I found you!';    //两秒后变回正常标题    titleTime = setTimeout(function () {      document.title = OriginTitile;    }, 2000);  }});]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>音乐</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
-      
-        <content type="html"><![CDATA[<p>如果你喜欢我的歌单欢迎添加到歌单</p><p>QQ：491412838</p><h2 id="英文歌曲">英文歌曲</h2>    <div id="aplayer-pvmJjJmS" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="7437192369" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"    ></div><h2 id="日系歌曲">日系歌曲</h2>    <div id="aplayer-WMHWqsgo" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="7233713883" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#3F51B5"    ></div><h2 id="治愈系纯音乐">治愈系纯音乐</h2>    <div id="aplayer-vJTkRZLs" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="7408858667" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#3F51B5"    ></div><h2 id="致郁系纯音乐">致郁系纯音乐</h2>    <div id="aplayer-wHkxtJUF" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="7233748399" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#3F51B5"    ></div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>壁纸</title>
-      <link href="/wallpaper/index.html"/>
-      <url>/wallpaper/index.html</url>
-      
-        <content type="html"><![CDATA[<h2 id="收录随机壁纸">收录随机壁纸</h2><h3 id="必应">必应</h3><p><img src="https://bing.img.run/1920x1080.php" alt="必应"></p><h3 id="必应历史">必应历史</h3><p><img src="https://bing.img.run/rand.php" alt="必应历史"></p><h3 id="Picsum">Picsum</h3><p><img src="https://picsum.photos/1920/1080.webp" alt="Picsum"></p><h3 id="Unsplash">Unsplash</h3><p><img src="https://source.unsplash.com/random/1920x1080/" alt="Unsplash"></p>]]></content>
+        <content type="html"><![CDATA[//动态标题var OriginTitile = document.title;var titleTime;document.addEventListener('visibilitychange', function () {  if (document.hidden) {    //离开当前页面时标签显示内容    document.title = 'Qlittle - 👀 Where you are? ~';    clearTimeout(titleTime);  } else {    //返回当前页面时标签显示内容    document.title = 'Qlittle - 🐖 I found you!';    //两秒后变回正常标题    titleTime = setTimeout(function () {      document.title = OriginTitile;    }, 2000);  }});]]></content>
       
     </entry>
     
@@ -755,6 +720,39 @@
       <url>/link/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>音乐</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
+      
+        <content type="html"><![CDATA[<p>如果你喜欢我的歌单欢迎添加到歌单</p><p>QQ：491412838</p><h2 id="英文歌曲">英文歌曲</h2>    <div id="aplayer-LgZzCijs" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="7437192369" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"    ></div><h2 id="日系歌曲">日系歌曲</h2>    <div id="aplayer-RPYftllK" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="7233713883" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#3F51B5"    ></div><h2 id="治愈系纯音乐">治愈系纯音乐</h2>    <div id="aplayer-uNvzFhbO" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="7408858667" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#3F51B5"    ></div><h2 id="致郁系纯音乐">致郁系纯音乐</h2>    <div id="aplayer-VMVNzRZA" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="7233748399" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#3F51B5"    ></div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/universe.css"/>
+      <url>/css/universe.css</url>
+      
+        <content type="html"><![CDATA[/* 背景宇宙星光  */#universe{    display: block;    position: fixed;    margin: 0;    padding: 0;    border: 0;    outline: 0;    left: 0;    top: 0;    width: 100%;    height: 100%;    pointer-events: none;    /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */    z-index: -1;  }]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>壁纸</title>
+      <link href="/wallpaper/index.html"/>
+      <url>/wallpaper/index.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="收录随机壁纸">收录随机壁纸</h2><h3 id="必应">必应</h3><p><img src="https://bing.img.run/1920x1080.php" alt="必应"></p><h3 id="必应历史">必应历史</h3><p><img src="https://bing.img.run/rand.php" alt="必应历史"></p><h3 id="Picsum">Picsum</h3><p><img src="https://picsum.photos/1920/1080.webp" alt="Picsum"></p><h3 id="Unsplash">Unsplash</h3><p><img src="https://source.unsplash.com/random/1920x1080/" alt="Unsplash"></p>]]></content>
       
     </entry>
     
