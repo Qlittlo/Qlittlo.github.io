@@ -86,8 +86,6 @@
       
         <tags>
             
-            <tag> Markdown </tag>
-            
             <tag> 小知识 </tag>
             
         </tags>
@@ -649,22 +647,22 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>关于</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h2 id="有什么可以为你解答的可以通过邮箱交流，感谢你的浏览">有什么可以为你解答的可以通过邮箱交流，感谢你的浏览</h2>]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>关于</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
-        <content type="html"><![CDATA[<h2 id="有什么可以为你解答的可以通过邮箱交流，感谢你的浏览">有什么可以为你解答的可以通过邮箱交流，感谢你的浏览</h2>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -693,6 +691,17 @@
     
     
     <entry>
+      <title>友情链接</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title></title>
       <link href="/js/universe.js"/>
       <url>/js/universe.js</url>
@@ -715,22 +724,11 @@
     
     
     <entry>
-      <title>友情链接</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>音乐</title>
       <link href="/music/index.html"/>
       <url>/music/index.html</url>
       
-        <content type="html"><![CDATA[<p>如果你喜欢我的歌单欢迎添加到歌单</p><p>QQ：491412838</p><h2 id="英文歌曲">英文歌曲</h2>    <div id="aplayer-LgZzCijs" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="7437192369" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"    ></div><h2 id="日系歌曲">日系歌曲</h2>    <div id="aplayer-RPYftllK" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="7233713883" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#3F51B5"    ></div><h2 id="治愈系纯音乐">治愈系纯音乐</h2>    <div id="aplayer-uNvzFhbO" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="7408858667" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#3F51B5"    ></div><h2 id="致郁系纯音乐">致郁系纯音乐</h2>    <div id="aplayer-VMVNzRZA" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="7233748399" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#3F51B5"    ></div>]]></content>
+        <content type="html"><![CDATA[<p>如果你喜欢我的歌单欢迎添加到歌单</p><p>QQ：491412838</p><h2 id="英文歌曲">英文歌曲</h2>    <div id="aplayer-VZctrYtE" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="7437192369" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"    ></div><h2 id="日系歌曲">日系歌曲</h2>    <div id="aplayer-CoADQDyx" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="7233713883" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#3F51B5"    ></div><h2 id="治愈系纯音乐">治愈系纯音乐</h2>    <div id="aplayer-QyEfsBMj" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="7408858667" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#3F51B5"    ></div><h2 id="致郁系纯音乐">致郁系纯音乐</h2>    <div id="aplayer-VawDkeEE" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="7233748399" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#3F51B5"    ></div>]]></content>
       
     </entry>
     
