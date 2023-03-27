@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>PostgreSQL安装</title>
+      <link href="/2023/03/27/PostgreSQL%E5%AE%89%E8%A3%85/"/>
+      <url>/2023/03/27/PostgreSQL%E5%AE%89%E8%A3%85/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>以Debian11为例</p></blockquote><h2 id="安装">安装</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install postgresql</span><br></pre></td></tr></table></figure><p>运行后会提示“你可以用下面的命令开启数据库服务器”</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pg_ctlcluster 13 main start</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 编程 </category>
+          
+          <category> 数据库 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> SQL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>CPP | 顺序容器</title>
       <link href="/2023/03/25/CPP-%E5%AE%B9%E5%99%A8/"/>
       <url>/2023/03/25/CPP-%E5%AE%B9%E5%99%A8/</url>
@@ -328,9 +357,9 @@
             
             <tag> Linux </tag>
             
-            <tag> 配置 </tag>
-            
             <tag> 安装教程 </tag>
+            
+            <tag> 配置 </tag>
             
             <tag> 虚拟机 </tag>
             
@@ -359,13 +388,13 @@
       
         <tags>
             
+            <tag> 配置 </tag>
+            
             <tag> Window </tag>
             
             <tag> Win10 </tag>
             
             <tag> 系统 </tag>
-            
-            <tag> 配置 </tag>
             
         </tags>
       
@@ -924,6 +953,17 @@
     
     
     <entry>
+      <title>关于</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      
+        <content type="html"><![CDATA[<p>一个非科班学渣的编程学习之旅，喜欢动画、音乐和折腾电脑。</p><h2 id="有什么可以为你解答的可以通过邮箱交流，感谢你的浏览">有什么可以为你解答的可以通过邮箱交流，感谢你的浏览</h2>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>分类</title>
       <link href="/categories/index.html"/>
       <url>/categories/index.html</url>
@@ -936,21 +976,10 @@
     
     <entry>
       <title></title>
-      <link href="/css/custom.css"/>
-      <url>/css/custom.css</url>
+      <link href="/css/universe.css"/>
+      <url>/css/universe.css</url>
       
-        <content type="html"><![CDATA[/* 页脚与头图透明 */#footer {    background: transparent !important;  }  #page-header {    background: transparent !important;  }    /* 白天模式遮罩透明 */  #footer::before {    background: transparent !important;  }  #page-header::before {    background: transparent !important;  }    /* 夜间模式遮罩透明 */  [data-theme="dark"] #footer::before {    background: transparent !important;  }  [data-theme="dark"] #page-header::before {    background: transparent !important;  }/* 全局宽度 */.layout {  max-width: 1400px;}/* 侧边卡片栏宽度 */.aside-content {  max-width: 318px;  min-width: 300px;}/* 平板尺寸自适应(不启用侧边栏宽度限制) */@media screen and (max-width: 900px) {  .aside-content {    max-width: none !important;    padding: 0 5px 0 5px;  }}/* 除了首页以外其他页面隐藏卡片，并采用宽屏显示 */#archive,#page,#category,#tag {  width: 100%;}.page:not(.page.home) .aside-content {  display: none;}/* 翻页按钮居中 */#pagination {  width: 100%;  margin: auto;}:root {  --trans-light: rgba(255, 255, 255, 0.88);  --trans-dark: rgba(25, 25, 25, 0.88);  --border-style: 1px solid rgb(169, 169, 169);  --backdrop-filter: blur(5px) saturate(150%);}/* 首页文章卡片 */#recent-posts > .recent-post-item {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border-radius: 25px;  border: var(--border-style);}/* 首页侧栏卡片 */#aside-content .card-widget {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border-radius: 18px;  border: var(--border-style);}/* 文章页、归档页、普通页面 */div#post,div#page,div#archive {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border: var(--border-style);  border-radius: 20px;}/* 导航栏 */#page-header.nav-fixed #nav {  background: rgba(255, 255, 255, 0.75);  backdrop-filter: var(--backdrop-filter);}[data-theme="dark"] #page-header.nav-fixed #nav {  background: rgba(0, 0, 0, 0.7) !important;}/* 夜间模式遮罩 */[data-theme="dark"] #recent-posts > .recent-post-item,[data-theme="dark"] #aside-content .card-widget,[data-theme="dark"] div#post,[data-theme="dark"] div#archive,[data-theme="dark"] div#page {  background: var(--trans-dark);}/* 夜间模式页脚页头遮罩透明 */[data-theme="dark"] #footer::before {  background: transparent !important;}[data-theme="dark"] #page-header::before {  background: transparent !important;}/* 阅读模式 */.read-mode #aside-content .card-widget {  background: rgba(158, 204, 171, 0.5) !important;}.read-mode div#post {  background: rgba(158, 204, 171, 0.5) !important;}/* 夜间模式下的阅读模式 */[data-theme="dark"] .read-mode #aside-content .card-widget {  background: rgba(25, 25, 25, 0.9) !important;  color: #ffffff;}[data-theme="dark"] .read-mode div#post {  background: rgba(25, 25, 25, 0.9) !important;  color: #ffffff;}/* 字体 */@font-face {  /* 为载入的字体取名字(随意) */  font-family: 'DEYI';  /* 字体文件地址(相对或者绝对路径都可以) */  src: url(/font/deyi.woff2);  /* 定义加粗样式(加粗多少) */  font-weight: normal;  /* 定义字体样式(斜体/非斜体) */  font-style: normal;  /* 定义显示样式 */  font-display: block;}/* 侧边栏个人信息卡片动态渐变色 */#aside-content > .card-widget.card-info {  background: linear-gradient(    -45deg,    #e8d8b9,    #eccec5,    #a3e9eb,    #bdbdf0,    #eec1ea  );  box-shadow: 0 0 5px rgb(66, 68, 68);  position: relative;  background-size: 400% 400%;  -webkit-animation: Gradient 10s ease infinite;  -moz-animation: Gradient 10s ease infinite;  animation: Gradient 10s ease infinite !important;}@-webkit-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@-moz-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}/* 黑夜模式适配 */[data-theme="dark"] #aside-content > .card-widget.card-info {  background: #191919ee;}/* 个人信息Follow me按钮 */#aside-content > .card-widget.card-info > #card-info-btn {  background-color: #3eb8be;  border-radius: 8px;}/*哔哩哔哩视频适配*/.bilibili {  position: relative;  width: 90%;  height: auto;  padding-bottom: 75%;  margin: 3% auto;  text-align: center;}.bilibili iframe {  position: absolute;  width: 100%;  height: 86%;  left: 0;  top: 0;}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>关于</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      
-        <content type="html"><![CDATA[<p>一个非科班学渣的编程学习之旅，喜欢动画、音乐和折腾电脑。</p><h2 id="有什么可以为你解答的可以通过邮箱交流，感谢你的浏览">有什么可以为你解答的可以通过邮箱交流，感谢你的浏览</h2>]]></content>
+        <content type="html"><![CDATA[/* 背景宇宙星光  */#universe{    display: block;    position: fixed;    margin: 0;    padding: 0;    border: 0;    outline: 0;    left: 0;    top: 0;    width: 100%;    height: 100%;    pointer-events: none;    /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */    z-index: -1;  }]]></content>
       
     </entry>
     
@@ -958,10 +987,10 @@
     
     <entry>
       <title></title>
-      <link href="/css/universe.css"/>
-      <url>/css/universe.css</url>
+      <link href="/css/custom.css"/>
+      <url>/css/custom.css</url>
       
-        <content type="html"><![CDATA[/* 背景宇宙星光  */#universe{    display: block;    position: fixed;    margin: 0;    padding: 0;    border: 0;    outline: 0;    left: 0;    top: 0;    width: 100%;    height: 100%;    pointer-events: none;    /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */    z-index: -1;  }]]></content>
+        <content type="html"><![CDATA[/* 页脚与头图透明 */#footer {    background: transparent !important;  }  #page-header {    background: transparent !important;  }    /* 白天模式遮罩透明 */  #footer::before {    background: transparent !important;  }  #page-header::before {    background: transparent !important;  }    /* 夜间模式遮罩透明 */  [data-theme="dark"] #footer::before {    background: transparent !important;  }  [data-theme="dark"] #page-header::before {    background: transparent !important;  }/* 全局宽度 */.layout {  max-width: 1400px;}/* 侧边卡片栏宽度 */.aside-content {  max-width: 318px;  min-width: 300px;}/* 平板尺寸自适应(不启用侧边栏宽度限制) */@media screen and (max-width: 900px) {  .aside-content {    max-width: none !important;    padding: 0 5px 0 5px;  }}/* 除了首页以外其他页面隐藏卡片，并采用宽屏显示 */#archive,#page,#category,#tag {  width: 100%;}.page:not(.page.home) .aside-content {  display: none;}/* 翻页按钮居中 */#pagination {  width: 100%;  margin: auto;}:root {  --trans-light: rgba(255, 255, 255, 0.88);  --trans-dark: rgba(25, 25, 25, 0.88);  --border-style: 1px solid rgb(169, 169, 169);  --backdrop-filter: blur(5px) saturate(150%);}/* 首页文章卡片 */#recent-posts > .recent-post-item {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border-radius: 25px;  border: var(--border-style);}/* 首页侧栏卡片 */#aside-content .card-widget {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border-radius: 18px;  border: var(--border-style);}/* 文章页、归档页、普通页面 */div#post,div#page,div#archive {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border: var(--border-style);  border-radius: 20px;}/* 导航栏 */#page-header.nav-fixed #nav {  background: rgba(255, 255, 255, 0.75);  backdrop-filter: var(--backdrop-filter);}[data-theme="dark"] #page-header.nav-fixed #nav {  background: rgba(0, 0, 0, 0.7) !important;}/* 夜间模式遮罩 */[data-theme="dark"] #recent-posts > .recent-post-item,[data-theme="dark"] #aside-content .card-widget,[data-theme="dark"] div#post,[data-theme="dark"] div#archive,[data-theme="dark"] div#page {  background: var(--trans-dark);}/* 夜间模式页脚页头遮罩透明 */[data-theme="dark"] #footer::before {  background: transparent !important;}[data-theme="dark"] #page-header::before {  background: transparent !important;}/* 阅读模式 */.read-mode #aside-content .card-widget {  background: rgba(158, 204, 171, 0.5) !important;}.read-mode div#post {  background: rgba(158, 204, 171, 0.5) !important;}/* 夜间模式下的阅读模式 */[data-theme="dark"] .read-mode #aside-content .card-widget {  background: rgba(25, 25, 25, 0.9) !important;  color: #ffffff;}[data-theme="dark"] .read-mode div#post {  background: rgba(25, 25, 25, 0.9) !important;  color: #ffffff;}/* 字体 */@font-face {  /* 为载入的字体取名字(随意) */  font-family: 'DEYI';  /* 字体文件地址(相对或者绝对路径都可以) */  src: url(/font/deyi.woff2);  /* 定义加粗样式(加粗多少) */  font-weight: normal;  /* 定义字体样式(斜体/非斜体) */  font-style: normal;  /* 定义显示样式 */  font-display: block;}/* 侧边栏个人信息卡片动态渐变色 */#aside-content > .card-widget.card-info {  background: linear-gradient(    -45deg,    #e8d8b9,    #eccec5,    #a3e9eb,    #bdbdf0,    #eec1ea  );  box-shadow: 0 0 5px rgb(66, 68, 68);  position: relative;  background-size: 400% 400%;  -webkit-animation: Gradient 10s ease infinite;  -moz-animation: Gradient 10s ease infinite;  animation: Gradient 10s ease infinite !important;}@-webkit-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@-moz-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}/* 黑夜模式适配 */[data-theme="dark"] #aside-content > .card-widget.card-info {  background: #191919ee;}/* 个人信息Follow me按钮 */#aside-content > .card-widget.card-info > #card-info-btn {  background-color: #3eb8be;  border-radius: 8px;}/*哔哩哔哩视频适配*/.bilibili {  position: relative;  width: 90%;  height: auto;  padding-bottom: 75%;  margin: 3% auto;  text-align: center;}.bilibili iframe {  position: absolute;  width: 100%;  height: 86%;  left: 0;  top: 0;}]]></content>
       
     </entry>
     
@@ -1005,18 +1034,7 @@
       <link href="/music/index.html"/>
       <url>/music/index.html</url>
       
-        <content type="html"><![CDATA[<p>如果你喜欢我的歌单欢迎添加到歌单</p><p>QQ：491412838</p><h2 id="英文歌曲">英文歌曲</h2>    <div id="aplayer-xUfTsuWu" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="7437192369" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"    ></div><h2 id="日系歌曲">日系歌曲</h2>    <div id="aplayer-yosFOQRr" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="7233713883" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#3F51B5"    ></div><h2 id="治愈系纯音乐">治愈系纯音乐</h2>    <div id="aplayer-SOnfEtwD" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="7408858667" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#3F51B5"    ></div><h2 id="致郁系纯音乐">致郁系纯音乐</h2>    <div id="aplayer-AvsGHhWt" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="7233748399" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#3F51B5"    ></div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p>如果你喜欢我的歌单欢迎添加到歌单</p><p>QQ：491412838</p><h2 id="英文歌曲">英文歌曲</h2>    <div id="aplayer-gsuAGETT" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="7437192369" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"    ></div><h2 id="日系歌曲">日系歌曲</h2>    <div id="aplayer-pfcCfDjc" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="7233713883" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#3F51B5"    ></div><h2 id="治愈系纯音乐">治愈系纯音乐</h2>    <div id="aplayer-nMyzOsWz" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="7408858667" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#3F51B5"    ></div><h2 id="致郁系纯音乐">致郁系纯音乐</h2>    <div id="aplayer-wImRuaxv" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="7233748399" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#3F51B5"    ></div>]]></content>
       
     </entry>
     
@@ -1028,6 +1046,17 @@
       <url>/wallpaper/index.html</url>
       
         <content type="html"><![CDATA[<h2 id="收录随机壁纸">收录随机壁纸</h2><h3 id="Picsum">Picsum</h3><p><img src="https://picsum.photos/1920/1080.webp" alt="Picsum"></p><h3 id="Unsplash">Unsplash</h3><p><img src="https://source.unsplash.com/random/1920x1080/" alt="Unsplash"></p>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
