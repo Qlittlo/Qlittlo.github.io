@@ -8,7 +8,7 @@
       <link href="/2023/04/11/Win11%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/"/>
       <url>/2023/04/11/Win11%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/</url>
       
-        <content type="html"><![CDATA[<h2 id="警告⚠：还在施工">警告⚠：还在施工</h2><p>首先是win11的安装（文章发表时版本为22H2）</p><h2 id="制作启动盘">制作启动盘</h2><p>访问Microsoft的Win11镜像官网 <a href="https://www.microsoft.com/zh-cn/software-download/windows11">点击跳转</a></p><p>找到<code>创建Window11安装</code>，点击该子项的<code>立即下载</code></p><p><img src="images/2023-04-11-08-19-41.png" alt="创建Window11安装"></p><p>插上U盘，打开软件即可制作启动盘，过程比较傻瓜式，此处不再演示。</p><h2 id="系统安装与分区">系统安装与分区</h2><h3 id="系统安装">系统安装</h3><p>根据不同品牌电脑，此处有不同的操作。</p><p>以我的暗影4为例：我的笔记本电脑F9为U盘启动，F10为进入BIOS。快捷键上网上搜索一下即可。</p><h4 id="U盘启动">U盘启动</h4><p>如果能搜到U盘启动的快捷（不能就看下面的BIOS启动法），在重启电脑时(电脑由off到亮起笔记本logo这段时间)狂按你上面搜索到的那个快捷键，会让你选择U盘设备(device)，选择上面制作启动盘的U盘。</p><h4 id="BIOS">BIOS</h4><p>如果你没能搜到U盘启动的快捷键，就用BIOS调整启动顺序即可。BIOS是所有电脑都有的，但是根据品牌的差异，界面也有所不同。多翻翻各个选项（不确定的不要乱动），会有个启动顺序，把U盘的启动循序优先级调高，重启即可。</p><blockquote><p>别忘了再调回去</p></blockquote><h3 id="分区">分区</h3><p>重装过程也就分区可能会劝退一部分新手，所以就介绍下如何给电脑分区。</p><h2 id="个人向的常用软件">个人向的常用软件</h2><h3 id="系统软件">系统软件</h3><h4 id="Edge浏览器">Edge浏览器</h4><p>我比较喜欢自带的Microsoft Edge，用Edge浏览器不用科学便可方便地实现多设备同步和插件安装。</p><p>我的插件清单</p><ol><li>Dark Reader：实现类似夜间模式的效果</li><li>Infinity新标签页(Pro)：更好看方便的首页与新标签页</li><li>Tampermonkey：油猴</li><li>Vimium C：用Vim的方式不用鼠标浏览网页</li><li>uBlock Origin：去广告</li></ol><h4 id="输入法">输入法</h4><p>自带的就很好用！但是如果你偶尔玩游戏，建议再下载一个英文语言包，打开<code>设置</code>，进入<code>时间与语言</code>，再点击<code>语言与区域</code></p><p><img src="images/2023-04-11-08-42-53.png" alt="英文"></p><p>点击后面的三个点，进入语言选项</p><p><img src="images/2023-04-11-08-43-46.png" alt="语言选项"></p><p>进入后，下载键盘输入即可。以后就可以通过<code>Win + space(空格)</code>进行切换了</p><h3 id="生产力">生产力</h3><h4 id="VS-Code">VS Code</h4><p><a href="code.visualstudio.com">点击跳转官网</a></p><p>一个很“小巧”的编辑器软件，支持多种编程语言。</p><h4 id="Sumatra-PDF">Sumatra PDF</h4><p><a href="https://www.sumatrapdfreader.org/free-pdf-reader">点击跳转官网</a></p><p>如果你对PDF的需求只有读，那么这个大小只有几十M的PDF阅读软件肯定适合你。</p><h4 id="Virtual-Box">Virtual Box</h4><p><a href="https://www.virtualbox.org/">点击跳转官网</a></p><p>免费开源的虚拟机软件，可以用来学习Linux和在虚拟机里瞎折腾</p><h3 id="影音娱乐">影音娱乐</h3><h4 id="OBS-studio">OBS studio</h4><p><a href="https://obsproject.com/">点击跳转官网</a></p><p>非常专业的开源录屏和直播推流软件</p><h4 id="Potplayer">Potplayer</h4><p><a href="http://potplayer.tv/?lang=zh_CN">点击跳转官网</a></p><p>暂时没有广告的本地视频播放器</p><h4 id="spotify">spotify</h4><p>世界上最流行的音乐软件之一，使用需要点手段，但是你会喜欢上它的。</p><h4 id="Steam">Steam</h4><p><a href="https://store.steampowered.com/">点击跳转官网</a></p><p>宅男天堂</p><h3 id="工具软件">工具软件</h3><h4 id="qBittorrent">qBittorrent</h4><p>磁力下载软件</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="警告⚠：还在施工">警告⚠：还在施工</h2><p>首先是win11的安装（22h2）</p><h2 id="制作启动盘">制作启动盘</h2><p>访问Microsoft的Win11镜像官网 <a href="https://www.microsoft.com/zh-cn/software-download/windows11">点击跳转</a></p><p>找到<code>创建Window11安装</code>，点击该子项的<code>立即下载</code></p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/Win11%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/2023-04-11-08-19-41.webp" alt="创建Window11安装"></p><p>插上U盘，打开软件即可制作启动盘，过程比较傻瓜式，此处不再演示。</p><h2 id="系统安装与分区">系统安装与分区</h2><h3 id="系统安装">系统安装</h3><p>根据不同品牌电脑，此处有不同的操作。</p><p>以我的暗影4为例：我的笔记本电脑F9为U盘启动，F10为进入BIOS。快捷键上网上搜索一下即可。</p><h4 id="U盘启动">U盘启动</h4><p>如果能搜到U盘启动的快捷（不能就看下面的BIOS启动法），在重启电脑时(电脑由off到亮起笔记本logo这段时间)狂按你上面搜索到的那个快捷键，会让你选择U盘设备(device)，选择上面制作启动盘的U盘。</p><h4 id="BIOS">BIOS</h4><p>如果你没能搜到U盘启动的快捷键，就用BIOS调整启动顺序即可。BIOS是所有电脑都有的，但是根据品牌的差异，界面也有所不同。多翻翻各个选项（不确定的不要乱动），会有个启动顺序，把U盘的启动循序优先级调高，重启即可。</p><blockquote><p>别忘了再调回去</p></blockquote><h3 id="分区">分区</h3><p>重装过程也就分区可能会劝退一部分新手，所以就介绍下如何给电脑分区。</p><h2 id="个人向的常用软件">个人向的常用软件</h2><h3 id="系统软件">系统软件</h3><h4 id="Edge浏览器">Edge浏览器</h4><p>我比较喜欢自带的Microsoft Edge，用Edge浏览器不用科学便可方便地实现多设备同步和插件安装。</p><p>我的插件清单</p><ol><li>Dark Reader：实现类似夜间模式的效果</li><li>Infinity新标签页(Pro)：更好看方便的首页与新标签页</li><li>Tampermonkey：油猴</li><li>Vimium C：用Vim的方式不用鼠标浏览网页</li><li>uBlock Origin：去广告</li></ol><h4 id="输入法">输入法</h4><p>自带的就很好用！但是如果你偶尔玩游戏，建议再下载一个英文语言包，打开<code>设置</code>，进入<code>时间与语言</code>，再点击<code>语言与区域</code></p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/Win11%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/2023-04-11-08-42-53.webp" alt="英文"></p><p>点击后面的三个点，进入语言选项</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/Win11%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/2023-04-11-08-43-46.webp" alt="语言选项"></p><p>进入后，下载键盘输入即可。以后就可以通过<code>Win + space(空格)</code>进行切换了</p><h3 id="生产力">生产力</h3><h4 id="VS-Code">VS Code</h4><p><a href="code.visualstudio.com">点击跳转官网</a></p><p>一个很“小巧”的编辑器软件，支持多种编程语言。</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/Win11%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/2023-04-12-20-03-21.webp" alt="VS Code"></p><h4 id="Sumatra-PDF">Sumatra PDF</h4><p><a href="https://www.sumatrapdfreader.org/free-pdf-reader">点击跳转官网</a></p><p>如果你对PDF的需求只有读，那么这个大小只有几十M的PDF阅读软件肯定适合你。</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/Win11%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/2023-04-12-20-04-43.webp" alt="Sumatra PDF"></p><h4 id="Virtual-Box">Virtual Box</h4><p><a href="https://www.virtualbox.org/">点击跳转官网</a></p><p>免费开源的虚拟机软件，可以用来学习Linux和在虚拟机里瞎折腾</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/Win11%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/2023-04-12-20-05-17.webp" alt="VBOX"></p><h3 id="影音娱乐">影音娱乐</h3><h4 id="OBS-studio">OBS studio</h4><p><a href="https://obsproject.com/">点击跳转官网</a></p><p>非常专业的开源录屏和直播推流软件</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/Win11%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/2023-04-12-20-06-52.webp" alt="OBS"></p><h4 id="Potplayer">Potplayer</h4><p><a href="http://potplayer.tv/?lang=zh_CN">点击跳转官网</a></p><p>“暂时”没有广告的本地视频播放器</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/Win11%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/2023-04-12-20-11-33.webp" alt="Potpalyer"></p><h4 id="Spotify">Spotify</h4><p>世界上最流行的音乐软件之一，使用需要点手段，但是你会喜欢上它的。</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/Win11%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/2023-04-12-20-12-42.webp" alt="Spotify"></p><h4 id="Steam">Steam</h4><p><a href="https://store.steampowered.com/">点击跳转官网</a></p><p>宅男天堂</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/Win11%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/2023-04-12-20-14-59.webp" alt="Steam"></p><h3 id="工具软件">工具软件</h3><h4 id="qBittorrent">qBittorrent</h4><p>磁力下载软件</p><p><img src="https://raw.githubusercontent.com/Qlittlo/picbed/main/MdPic/Win11%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95/2023-04-12-20-14-00.webp" alt="qBittorrent"></p>]]></content>
       
       
       <categories>
@@ -256,13 +256,13 @@
       
         <tags>
             
-            <tag> 算法 </tag>
-            
             <tag> 数学 </tag>
             
             <tag> 统计学习方法 </tag>
             
             <tag> 机器学习 </tag>
+            
+            <tag> 算法 </tag>
             
         </tags>
       
@@ -351,13 +351,13 @@
       
         <tags>
             
-            <tag> 算法 </tag>
-            
             <tag> 数学 </tag>
             
             <tag> 统计学习方法 </tag>
             
             <tag> 机器学习 </tag>
+            
+            <tag> 算法 </tag>
             
         </tags>
       
@@ -475,9 +475,9 @@
       
         <tags>
             
-            <tag> 算法 </tag>
-            
             <tag> 数学 </tag>
+            
+            <tag> 算法 </tag>
             
         </tags>
       
@@ -504,11 +504,11 @@
       
         <tags>
             
-            <tag> 数学 </tag>
-            
             <tag> 神经网络 </tag>
             
             <tag> 深度学习 </tag>
+            
+            <tag> 数学 </tag>
             
         </tags>
       
@@ -978,28 +978,6 @@
     
     
     <entry>
-      <title>关于</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      
-        <content type="html"><![CDATA[<p>一个非科班学渣的编程学习之旅，喜欢动画、音乐和折腾电脑。</p><p>目前正在学习Python、C++与机器学习</p><p>如果有什么错误欢迎联系我进行订正</p><h2 id="有什么可以为你解答的可以通过邮箱交流，感谢你的浏览">有什么可以为你解答的可以通过邮箱交流，感谢你的浏览</h2>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title></title>
       <link href="/css/custom.css"/>
       <url>/css/custom.css</url>
@@ -1011,11 +989,11 @@
     
     
     <entry>
-      <title>友情链接</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
+      <title>关于</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p>一个非科班学渣的编程学习之旅，喜欢动画、音乐和折腾电脑。</p><p>目前正在学习Python、C++与机器学习</p><p>如果有什么错误欢迎联系我进行订正</p><h2 id="有什么可以为你解答的可以通过邮箱交流，感谢你的浏览">有什么可以为你解答的可以通过邮箱交流，感谢你的浏览</h2>]]></content>
       
     </entry>
     
@@ -1033,9 +1011,9 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>友情链接</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -1055,22 +1033,22 @@
     
     
     <entry>
-      <title>音乐</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
-        <content type="html"><![CDATA[<p>如果你喜欢我的歌单欢迎添加到歌单</p><p>QQ：491412838</p><h2 id="英文歌曲">英文歌曲</h2>    <div id="aplayer-EPXSyiCq" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="7437192369" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"    ></div><h2 id="日系歌曲">日系歌曲</h2>    <div id="aplayer-iZOibxIu" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="7233713883" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#3F51B5"    ></div><h2 id="治愈系纯音乐">治愈系纯音乐</h2>    <div id="aplayer-YBkNEitI" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="7408858667" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#3F51B5"    ></div><h2 id="致郁系纯音乐">致郁系纯音乐</h2>    <div id="aplayer-HrmrySvQ" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="7233748399" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#3F51B5"    ></div>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>壁纸</title>
-      <link href="/wallpaper/index.html"/>
-      <url>/wallpaper/index.html</url>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
-        <content type="html"><![CDATA[<h2 id="收录随机壁纸">收录随机壁纸</h2><h3 id="Picsum">Picsum</h3><p><img src="https://picsum.photos/1920/1080.webp" alt="Picsum"></p><h3 id="Unsplash">Unsplash</h3><p><img src="https://source.unsplash.com/random/1920x1080/" alt="Unsplash"></p>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -1082,6 +1060,28 @@
       <url>/js/title.js</url>
       
         <content type="html"><![CDATA[//动态标题var OriginTitile = document.title;var titleTime;document.addEventListener('visibilitychange', function () {  if (document.hidden) {    //离开当前页面时标签显示内容    document.title = 'Qlittle - 👀 Where you are? ~';    clearTimeout(titleTime);  } else {    //返回当前页面时标签显示内容    document.title = 'Qlittle - 🐖 I found you!';    //两秒后变回正常标题    titleTime = setTimeout(function () {      document.title = OriginTitile;    }, 2000);  }});]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>音乐</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
+      
+        <content type="html"><![CDATA[<p>如果你喜欢我的歌单欢迎添加到歌单</p><p>QQ：491412838</p><h2 id="英文歌曲">英文歌曲</h2>    <div id="aplayer-VwFfPLzJ" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="7437192369" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"    ></div><h2 id="日系歌曲">日系歌曲</h2>    <div id="aplayer-mJiPDfFP" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="7233713883" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#3F51B5"    ></div><h2 id="治愈系纯音乐">治愈系纯音乐</h2>    <div id="aplayer-gCnvByCI" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="7408858667" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#3F51B5"    ></div><h2 id="致郁系纯音乐">致郁系纯音乐</h2>    <div id="aplayer-TjJLzPLa" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="7233748399" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#3F51B5"    ></div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>壁纸</title>
+      <link href="/wallpaper/index.html"/>
+      <url>/wallpaper/index.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="收录随机壁纸">收录随机壁纸</h2><h3 id="Picsum">Picsum</h3><p><img src="https://picsum.photos/1920/1080.webp" alt="Picsum"></p><h3 id="Unsplash">Unsplash</h3><p><img src="https://source.unsplash.com/random/1920x1080/" alt="Unsplash"></p>]]></content>
       
     </entry>
     
